@@ -491,7 +491,7 @@ class GoBoard(object):
                     oppStones+=1
             if currStones < 1 or oppStones < 1:
                 # print('values', pow(10, currStones), currStones, oppStones, pow(10, oppStones))
-                value += pow(10, currStones) - pow(10, oppStones)
+                value += currStones - oppStones
             
         # print('third', value)
         return value

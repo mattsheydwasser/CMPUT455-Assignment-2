@@ -518,7 +518,6 @@ def alphabeta(state, alpha, beta):
         if value > alpha:
             alpha = value
             moveToPlay = m
-
         state.undo()
        
         if value >= beta: 
