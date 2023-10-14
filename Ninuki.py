@@ -45,7 +45,7 @@ class Go0(GoEngine):
         elif value == 0:
             return 'draw', moveToPlay
         else:
-            return 'w', moveToPlay
+            return 'w', None
         # except TimeoutError:
         #     return 'unknown', None
         # finally:

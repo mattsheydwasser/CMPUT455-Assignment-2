@@ -23,7 +23,7 @@ span.test { font-weight:bold; }
 </td></tr>
 </table>
 <table width="100%" bgcolor="#e0e0e0">
-<tr><th align="left">Date:</th><td>October 14, 2023 at 1:33:58 PM MDT</td></tr>
+<tr><th align="left">Date:</th><td>October 14, 2023 at 4:18:47 PM MDT</td></tr>
 <tr><th align="left">Host:</th><td>MattsLaptop (Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz)</td></tr>
 <tr><th align="left" valign="top">Command:</th>
 <td valign="top"><tt>Ninuki.py</tt></td></tr>
@@ -120,29 +120,1972 @@ cputime
 </span>= 
 
 <span class="test"><a name="10">10 solve
-</a></span><span class="stderr">Traceback (most recent call last):
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/Ninuki.py", line 67, in &lt;module&gt;
-    run()
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/Ninuki.py", line 63, in run
-    con.start_connection()
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 102, in start_connection
-    self.get_cmd(line)
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 130, in get_cmd
-    raise e
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 126, in get_cmd
-    self.commands[command_name](args)
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 407, in solve_cmd
-    value, moveToPlay = self.go_engine.solve(self.board, self.time)
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/Ninuki.py", line 41, in solve
-    value, moveToPlay = alphabeta(board, -10000, 10000)
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 499, in alphabeta
-    temp = state.orderScores()
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/board.py", line 520, in orderScores
-    dic[each] = self.evaluateMove(each)
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/board.py", line 526, in evaluateMove
-    score = -self.staticallyEvaluateForToPlay()
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/board.py", line 474, in staticallyEvaluateForToPlay
-    return self.heuristicValue()
-  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/board.py", line 498, in heuristicValue
-    opponent = opponent(self.current_player)
-UnboundLocalError: local variable 'opponent' referenced before assignment
+</a></span><span class="invalid">Invalid response: {8: -9999, 10: -9999, 11: 0}
+Invalid response: ------- 0 11
+</span><span class="test">#?[draw e1]
+= draw e1
+
+</span>
+<span class="command">clear_board
+</span>= 
+
+<span class="command">play b d5
+</span>= 
+
+<span class="command">play w a1
+</span>= 
+
+<span class="command">play b b2
+</span>= 
+
+<span class="command">play w d2
+</span>= 
+
+<span class="command">play b c3
+</span>= 
+
+<span class="command">play w b4
+</span>= 
+
+<span class="command">play b b3
+</span>= 
+
+<span class="command">play w a5
+</span>= 
+
+<span class="command">play b c2
+</span>= 
+
+<span class="command">play w d3
+</span>= 
+
+<span class="command">play b b5
+</span>= 
+
+<span class="command">play w a4
+</span>= 
+
+<span class="command">play b e3
+</span>= 
+
+<span class="command">play w a3
+</span>= 
+
+<span class="command">play b b3
+</span>= 
+
+<span class="command">play w d4
+</span>= 
+
+<span class="command">play b a2
+</span>= 
+
+<span class="command">play w b1
+</span>= 
+
+<span class="command">play b b3
+</span>= 
+
+<span class="command">play w d1
+</span>= 
+
+<span class="command">play b e2
+</span>= 
+
+<span class="command">play w c1
+</span>= 
+
+<span class="command">play b c3
+</span>= 
+
+<span class="command">play w c4
+</span>= 
+
+<span class="command">play b e5
+</span>= 
+
+<span class="command">play w c2
+</span>= 
+
+<span class="command">play b b2
+</span>= 
+
+<span class="command">play w b3
+</span>= 
+
+<span class="command">timelimit 1
+</span>= 
+
+<span class="test"><a name="20">20 solve
+</a></span><span class="invalid">Invalid response: {11: 999, 15: -9000, 16: 0, 29: 999, 33: -18000}
+Invalid response: {15: 0, 16: 0, 29: 1000000, 33: -999}
+Invalid response: first
+Invalid response: {11: 1000000, 15: 0, 16: 0, 33: -999}
+Invalid response: first
+Invalid response: {11: 1000000, 15: 9999, 22: 0, 28: 18099, 29: 9999, 33: 0}
+Invalid response: first
+Invalid response: {11: 1000000, 16: 18999, 29: 1000000, 33: 9000}
+Invalid response: first
+Invalid response: {11: 1000000, 15: 18999, 16: 18999, 29: 1000000}
+Invalid response: first
+Invalid response: second -10000 A5 D1 E1
+Invalid response: ------- -10000 11
+</span><span class="test">#?[w]
+= w
+
+</span>
+<span class="command">clear_board
+</span>= 
+
+<span class="command">play b c2
+</span>= 
+
+<span class="command">play w e4
+</span>= 
+
+<span class="command">play b c1
+</span>= 
+
+<span class="command">play w e5
+</span>= 
+
+<span class="command">play b c3
+</span>= 
+
+<span class="command">play w c4
+</span>= 
+
+<span class="command">play b c5
+</span>= 
+
+<span class="command">play w d4
+</span>= 
+
+<span class="command">play b b4
+</span>= 
+
+<span class="command">play w b3
+</span>= 
+
+<span class="command">play b e1
+</span>= 
+
+<span class="command">play w d5
+</span>= 
+
+<span class="command">play b d1
+</span>= 
+
+<span class="command">play w e3
+</span>= 
+
+<span class="command">play b d2
+</span>= 
+
+<span class="command">play w b1
+</span>= 
+
+<span class="command">play b b5
+</span>= 
+
+<span class="command">play w a2
+</span>= 
+
+<span class="command">play b a3
+</span>= 
+
+<span class="command">play w b2
+</span>= 
+
+<span class="command">timelimit 1
+</span>= 
+
+<span class="test"><a name="30">30 genmove b
+</a></span><span class="invalid">Invalid response: {7: 9999, 17: 9999, 22: 9999, 25: 9999, 31: 1000000}
+Invalid response: first
+Invalid response: ------- 10000 31
+</span><span class="test">#?[a5]
+</span><span class="fail">= 31
+
+</span>
+<span class="command">clear_board
+</span>= d3
+
+<span class="command">play b c3
+</span>= 
+
+<span class="command">play w c2
+</span>= 
+
+<span class="command">play b d4
+</span>= 
+
+<span class="command">play w b2
+</span>= 
+
+<span class="command">play b d2
+</span>= 
+
+<span class="command">play w b4
+</span>= 
+
+<span class="command">play b a2
+</span>= 
+
+<span class="command">play w b3
+</span>= 
+
+<span class="command">play b b2
+</span>= 
+
+<span class="command">play w b5
+</span>= 
+
+<span class="command">play b c2
+</span>= 
+
+<span class="command">play w e2
+</span>= 
+
+<span class="command">play b a1
+</span>= 
+
+<span class="command">play w c5
+</span>= 
+
+<span class="command">play b e3
+</span>= 
+
+<span class="command">play w e1
+</span>= 
+
+<span class="command">play b a3
+</span>= 
+
+<span class="command">play w d2
+</span>= 
+
+<span class="command">play b c3
+</span>= 
+
+<span class="command">play w c1
+</span>= 
+
+<span class="command">play b c4
+</span>= 
+
+<span class="command">play w a4
+</span>= 
+
+<span class="command">play b e4
+</span>= 
+
+<span class="test"><a name="40">40 timelimit 2
+</a>#?[]
+= 
+
+<a name="50">50 genmove w
+</a>#?[e5]
+</span><span class="fail">= 
+
+</span>
+<span class="command">clear_board
+</span><span class="invalid">Invalid response: {8: -9900, 10: -9900, 22: -9900, 31: -9000, 34: -9000, 35: 1998}
+Invalid response: {8: -1998, 10: -1998, 22: -1998, 23: -999, 29: -999, 31: -999, 34: -999}
+Invalid response: {8: 999, 10: 999, 22: 999, 29: 2007, 31: 9999, 34: 9999}
+Invalid response: {8: -9999, 10: -9999, 22: -9999, 29: -9999, 34: 0}
+Invalid response: {8: -9999, 10: -9999, 22: -9999, 29: -9999, 31: 0}
+Invalid response: {8: -2007, 10: -1998, 22: -1998, 27: -1008, 28: -999, 31: -1008, 34: -999}
+Invalid response: {8: 999, 10: 999, 22: 999, 27: 2997, 31: 9999, 34: 9999}
+Invalid response: {8: -9999, 10: -9999, 22: -9999, 27: -9999, 34: 0}
+Invalid response: {8: -9999, 10: -9999, 22: -9999, 27: -9999, 31: 0}
+Invalid response: {8: -2997, 10: -2997, 15: -1998, 21: -999, 22: -2997, 31: -999, 34: -999}
+Invalid response: {8: 999, 10: 999, 15: 999, 22: 999, 31: 9999, 34: 9999}
+Invalid response: {8: -9999, 10: -9999, 15: -9999, 22: -9999, 34: 999}
+Invalid response: {8: -999, 10: -999, 15: -999, 20: 0, 22: 0, 27: -999}
+Invalid response: {8: -9999, 10: -9999, 15: -9999, 22: -9999, 31: 0}
+Invalid response: {10: -999, 15: -999, 22: -999, 31: 0, 34: 999}
+Invalid response: {10: -999, 15: -999, 20: 0, 22: 0, 27: -999, 31: -999}
+Invalid response: {8: -999, 15: -999, 22: -999, 31: 0, 34: 999}
+Invalid response: {8: -999, 15: -999, 20: 0, 22: 0, 27: -999, 31: -999}
+Invalid response: {8: -999, 10: -999, 22: -999, 31: 0, 34: 999}
+Invalid response: {8: -999, 10: -999, 20: 0, 22: 0, 27: -999, 31: -999}
+Invalid response: {8: -999, 10: -900, 15: -999, 31: 0, 34: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: -999, 22: -999, 27: -999, 31: 0, 34: 0}
+Invalid response: {8: -999, 22: -999, 27: -999, 31: 0, 34: 0}
+Invalid response: {8: -999, 10: -900, 27: -999, 31: 0, 34: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: -999, 22: -999, 29: -999, 31: 0, 34: 0}
+Invalid response: {8: -999, 22: -999, 29: -999, 31: 0, 34: 0}
+Invalid response: {8: -999, 10: -900, 29: -999, 31: 0, 34: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 10: 999, 22: 999, 23: 999, 31: 9999, 34: 9999}
+Invalid response: {8: -9999, 10: -9999, 22: -9999, 23: -9999, 34: 0}
+Invalid response: {8: 999, 10: 999, 22: 999, 23: 9999, 29: 11007, 34: 999}
+Invalid response: {8: -11007, 10: -10998, 22: -10998, 23: -1008, 27: -10008, 28: -9999, 34: -10998}
+Invalid response: {8: 1008, 10: 1098, 22: 1098, 27: 11007, 28: 10098, 34: 1098}
+Invalid response: {8: -11007, 10: -10998, 15: -10008, 21: -10008, 22: -10998, 28: -999, 34: -909}
+Invalid response: {8: 909, 10: 909, 15: 999, 20: 1008, 21: 1098, 22: 1008, 27: 9999, 28: 9909, 32: 909, 33: 999}
+Invalid response: {8: -9999, 10: -9999, 15: -9900, 20: -9099, 21: -9000, 22: -9099, 28: 0, 32: -9999, 33: -9900}
+Invalid response: {8: 999, 10: 999, 15: 9999, 21: 9999, 22: 999, 34: 999}
+Invalid response: {8: -9999, 10: -9999, 21: 0, 22: -9999, 34: 0}
+Invalid response: {8: 10008, 10: 10098, 21: 10008, 22: 10098, 28: 1000000, 34: 10098}
+Invalid response: first
+Invalid response: {8: 10008, 10: 10098, 15: 10008, 22: 10098, 28: 1000000, 34: 10098}
+Invalid response: first
+Invalid response: {8: 10998, 15: 19998, 21: 19998, 22: 10998, 28: 1000000, 34: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 10: 10998, 15: 19998, 21: 19998, 28: 1000000, 34: 10998}
+Invalid response: first
+Invalid response: {10: 11097, 15: 20007, 21: 20007, 22: 11097, 28: 1000000, 34: 11097}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9999, 10: 9999, 22: 9999, 23: 1000000, 27: 10998, 34: 9999}
+Invalid response: first
+Invalid response: {8: 10008, 10: 10098, 22: 10098, 23: 1000000, 28: 10098, 34: 10098}
+Invalid response: first
+Invalid response: {8: 10998, 22: 10998, 23: 1000000, 27: 20997, 28: 19998, 34: 10998}
+Invalid response: first
+Invalid response: {8: 11007, 10: 10998, 23: 1000000, 27: 20997, 28: 19998, 34: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 10: 10998, 22: 10998, 23: 1000000, 27: 20097, 28: 19998, 32: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {10: 11097, 22: 11097, 23: 1000000, 27: 21006, 28: 20097, 34: 11097}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 10: 999, 22: 999, 23: 9999, 29: 10998, 31: 999}
+Invalid response: {8: -10998, 10: -10998, 22: -10998, 23: -999, 27: -9999, 28: -9999, 31: -10998}
+Invalid response: {8: 999, 10: 999, 22: 999, 27: 11997, 28: 9999, 31: 999}
+Invalid response: {8: -11997, 10: -11997, 15: -10998, 21: -9999, 22: -11997, 28: -1998, 31: -10098}
+Invalid response: {8: 1998, 10: 1998, 15: 10998, 21: 19998, 22: 1998, 31: 10998}
+Invalid response: {8: -19998, 10: -19998, 15: -9999, 22: -999, 31: -999}
+Invalid response: {8: 999, 10: 999, 15: 9999, 20: 1998, 21: 19998, 31: 9999}
+Invalid response: {8: -19998, 10: -19998, 15: -9999, 20: -19998, 31: -999}
+Invalid response: {8: 999, 10: 999, 15: 9999, 20: 999, 32: 999, 33: 9999}
+Invalid response: {8: -9999, 10: -9999, 20: -9999, 32: -9999, 33: 0}
+Invalid response: {8: 19998, 10: 9999, 20: 9999, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 19998, 15: 1000000, 20: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 19998, 15: 1000000, 20: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 20997, 10: 19998, 15: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 10: 999, 15: 9999, 22: 999, 32: 999, 33: 9999}
+Invalid response: {8: -9999, 10: -9999, 22: 0, 32: -9900, 33: 0}
+Invalid response: {8: 9999, 10: 9999, 22: 9999, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 19998, 15: 1000000, 22: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 19998, 15: 1000000, 22: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9999, 10: 9999, 15: 9999, 22: 9999, 28: 1000000, 31: 9999}
+Invalid response: first
+Invalid response: {8: 10098, 10: 10098, 15: 10998, 21: 10998, 22: 10098, 28: 1000000, 32: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 10: 10998, 21: 19998, 22: 10998, 28: 1000000, 31: 19998}
+Invalid response: first
+Invalid response: {10: 11997, 15: 20997, 21: 29997, 22: 11997, 28: 1000000, 31: 20997}
+Invalid response: first
+Invalid response: {8: 11997, 15: 20997, 21: 29997, 22: 11997, 28: 1000000, 31: 20997}
+Invalid response: first
+Invalid response: {8: 11997, 10: 11997, 15: 20997, 21: 29997, 28: 1000000, 31: 20997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9999, 10: 9999, 22: 9999, 23: 1000000, 28: 9999, 31: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 10: 9999, 22: 9999, 23: 1000000, 27: 11997, 31: 9999}
+Invalid response: first
+Invalid response: {10: 10998, 22: 10998, 23: 1000000, 27: 21996, 28: 19998, 31: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 22: 10998, 23: 1000000, 27: 21996, 28: 19998, 31: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 10: 10998, 23: 1000000, 27: 21996, 28: 19998, 31: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 10: 10998, 22: 10998, 23: 1000000, 27: 20097, 28: 19998, 32: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 1998, 22: 1998, 23: 10998, 29: 12006, 31: 10998, 34: 10998}
+Invalid response: {10: -11997, 22: -11997, 23: -2007, 27: -11007, 28: -10998, 31: -11007, 34: -10998}
+Invalid response: {10: 2097, 22: 2097, 27: 13005, 28: 11097, 31: 11007, 34: 11097}
+Invalid response: {10: -12996, 15: -12006, 21: -11007, 22: -12996, 28: -2997, 31: -11007, 34: -1998}
+Invalid response: {10: 1998, 15: 2898, 20: 2097, 21: 11997, 22: 2097, 27: 11898, 28: 10998, 31: 10998}
+Invalid response: {10: -11997, 15: -10998, 20: -11997, 22: -11997, 27: -9999, 28: -10998, 31: -1098}
+Invalid response: {10: 1098, 15: 1998, 20: 1098, 22: 1098, 27: 10998, 28: 10098, 32: 1098, 33: 1998}
+Invalid response: {10: -10998, 15: -9999, 20: -10998, 22: -10998, 28: -999, 32: -10998, 33: -9999}
+Invalid response: {10: 999, 15: 9999, 20: 999, 22: 999, 32: 999, 33: 9999}
+Invalid response: {10: -9999, 20: -9999, 22: -9999, 32: -9999, 33: 0}
+Invalid response: {10: 9999, 20: 9999, 22: 9999, 28: 1000000, 32: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 15: 9999, 20: 9999, 22: 9999, 28: 1000000, 32: 11007}
+Invalid response: first
+Invalid response: {15: 19998, 20: 10998, 22: 10998, 28: 1000000, 32: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {10: 10998, 15: 19998, 22: 10998, 28: 1000000, 32: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {10: 10998, 15: 19998, 20: 10998, 28: 1000000, 32: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {10: 10998, 15: 19998, 20: 10998, 22: 10998, 28: 1000000, 33: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 9999, 15: 9999, 20: 9999, 22: 9999, 28: 9999, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 10998, 20: 10998, 22: 10998, 27: 19998, 28: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 10998, 15: 19998, 20: 10998, 22: 10998, 27: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {15: 20997, 20: 11997, 22: 11997, 27: 29997, 28: 20997, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 11997, 15: 20997, 22: 11997, 27: 29997, 28: 20997, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 11997, 15: 20997, 20: 11997, 27: 29997, 28: 20997, 31: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 2997, 15: 11997, 21: 20997, 22: 2997, 31: 20997, 34: 11997}
+Invalid response: {10: -20997, 15: -10998, 22: -1998, 31: -9999, 34: -10998}
+Invalid response: {10: 1998, 15: 10998, 20: 2997, 21: 20997, 31: 19998, 34: 21996}
+Invalid response: {10: -21897, 15: -20997, 20: -21096, 21: -19098, 22: -20997, 28: -11898, 31: -10998}
+Invalid response: {10: 11898, 15: 19998, 20: 11097, 21: 20097, 22: 11997, 28: 1000000}
+Invalid response: first
+Invalid response: {10: 11898, 15: 20898, 20: 11997, 21: 29997, 22: 11997, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 19998, 15: 19098, 20: 20097, 22: 20997, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 21897, 20: 21096, 21: 30096, 22: 21996, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 20997, 15: 29997, 20: 21996, 21: 39996, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: {10: 21996, 15: 30096, 21: 40095, 22: 22995, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: {15: 30897, 20: 21996, 21: 39996, 22: 21996, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 9999, 15: 1000000, 22: 9999, 34: 9999}
+Invalid response: first
+Invalid response: {10: 10998, 22: 10998, 31: 1000000, 34: 19998}
+Invalid response: first
+Invalid response: {10: 10998, 15: 19998, 20: 10998, 22: 10998, 27: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {15: 1000000, 22: 20997, 31: 1000000, 34: 29997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 11097, 15: 11007, 22: 11097, 28: 1000000, 31: 20007, 34: 20097}
+Invalid response: first
+Invalid response: {10: 11097, 15: 20007, 21: 20007, 22: 11097, 28: 1000000, 34: 11097}
+Invalid response: first
+Invalid response: {10: 12096, 21: 21006, 22: 12096, 28: 1000000, 31: 30006, 34: 21096}
+Invalid response: first
+Invalid response: {15: 21996, 21: 30996, 22: 12996, 28: 1000000, 31: 30996, 34: 21996}
+Invalid response: first
+Invalid response: {10: 12996, 15: 21996, 21: 30996, 28: 1000000, 31: 30996, 34: 21996}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 10998, 22: 10998, 23: 1000000, 27: 12996, 31: 19998, 34: 19998}
+Invalid response: first
+Invalid response: {10: 10998, 22: 10998, 23: 1000000, 27: 21996, 28: 19998, 31: 10998}
+Invalid response: first
+Invalid response: {10: 11097, 22: 11097, 23: 1000000, 28: 11097, 31: 20007, 34: 20097}
+Invalid response: first
+Invalid response: {10: 11097, 22: 11097, 23: 1000000, 27: 21006, 28: 20097, 34: 11097}
+Invalid response: first
+Invalid response: {22: 11997, 23: 1000000, 27: 22995, 28: 20997, 31: 20997, 34: 20997}
+Invalid response: first
+Invalid response: {10: 11997, 23: 1000000, 27: 22995, 28: 20997, 31: 20997, 34: 20997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 1998, 22: 1998, 23: 10998, 29: 11997, 31: 10998, 34: 10998}
+Invalid response: {8: -11997, 22: -11997, 23: -1998, 27: -10998, 28: -10998, 31: -10998, 34: -10998}
+Invalid response: {8: 1998, 22: 1998, 27: 12996, 28: 10998, 31: 10998, 34: 10998}
+Invalid response: {8: -12996, 15: -11997, 21: -10998, 22: -12996, 28: -2997, 31: -10998, 34: -1998}
+Invalid response: {8: 1998, 15: 2898, 20: 2097, 21: 11997, 22: 2097, 27: 11898, 28: 10998, 31: 10998}
+Invalid response: {8: -11997, 15: -10998, 20: -11997, 22: -11997, 27: -9999, 28: -10998, 31: -1098}
+Invalid response: {8: 1098, 15: 1998, 20: 1098, 22: 1098, 27: 10998, 28: 10098, 32: 1098, 33: 1998}
+Invalid response: {8: -10998, 15: -9999, 20: -10998, 22: -10998, 28: -999, 32: -10998, 33: -9999}
+Invalid response: {8: 999, 15: 9999, 20: 999, 22: 999, 32: 999, 33: 9999}
+Invalid response: {8: -9999, 20: -9999, 22: -9999, 32: -9999, 33: 0}
+Invalid response: {8: 9999, 20: 9999, 22: 9999, 28: 1000000, 32: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 15: 9999, 20: 9999, 22: 9999, 28: 1000000, 32: 10998}
+Invalid response: first
+Invalid response: {15: 19998, 20: 10998, 22: 10998, 28: 1000000, 32: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 11097, 15: 19998, 22: 10998, 28: 1000000, 32: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 15: 19998, 20: 10998, 28: 1000000, 32: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 15: 19998, 20: 10998, 22: 10998, 28: 1000000, 33: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9999, 15: 9999, 20: 9999, 22: 9999, 28: 9999, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 10998, 20: 10998, 22: 10998, 27: 19998, 28: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 10998, 15: 19998, 20: 10998, 22: 10998, 27: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {15: 20997, 20: 11997, 22: 11997, 27: 29997, 28: 20997, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 12996, 15: 20997, 22: 11997, 27: 29997, 28: 20997, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 11997, 15: 20997, 20: 11997, 27: 29997, 28: 20997, 31: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 2997, 15: 11997, 21: 20997, 22: 2997, 31: 20997, 34: 11997}
+Invalid response: {8: -20997, 15: -10998, 22: -1998, 31: -9999, 34: -10998}
+Invalid response: {8: 1998, 15: 10998, 20: 2997, 21: 20997, 31: 19998, 34: 21897}
+Invalid response: {8: -21897, 15: -20898, 20: -20997, 21: -18999, 22: -20997, 28: -11898, 31: -10899}
+Invalid response: {8: 10899, 15: 19899, 20: 10998, 21: 19998, 22: 10998, 28: 1000000}
+Invalid response: first
+Invalid response: {8: 11898, 15: 20898, 20: 11997, 21: 29997, 22: 11997, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 18999, 15: 18999, 20: 19998, 22: 19998, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 20898, 20: 20997, 21: 29997, 22: 20997, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 1000000, 15: 29997, 21: 39996, 22: 21996, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: {8: 20997, 15: 29997, 20: 21996, 21: 39996, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: {15: 30897, 20: 21996, 21: 39996, 22: 21996, 28: 1000000, 31: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9999, 15: 1000000, 22: 9999, 34: 9999}
+Invalid response: first
+Invalid response: {8: 10998, 22: 10998, 31: 1000000, 34: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 15: 19998, 20: 10998, 22: 10998, 27: 19998, 31: 1000000}
+Invalid response: first
+Invalid response: {15: 1000000, 22: 20997, 31: 1000000, 34: 29997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 10998, 15: 10998, 22: 10998, 28: 1000000, 31: 19998, 34: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 15: 19998, 21: 19998, 22: 10998, 28: 1000000, 34: 10998}
+Invalid response: first
+Invalid response: {8: 11997, 21: 20997, 22: 11997, 28: 1000000, 31: 29997, 34: 20997}
+Invalid response: first
+Invalid response: {15: 21996, 21: 30996, 22: 12996, 28: 1000000, 31: 30996, 34: 21996}
+Invalid response: first
+Invalid response: {8: 12996, 15: 21996, 21: 30996, 28: 1000000, 31: 30996, 34: 21996}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 10998, 22: 10998, 23: 1000000, 28: 10998, 31: 19998, 34: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 22: 10998, 23: 1000000, 27: 12996, 31: 19998, 34: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 22: 10998, 23: 1000000, 27: 20997, 28: 19998, 34: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 22: 10998, 23: 1000000, 27: 21996, 28: 19998, 31: 10998}
+Invalid response: first
+Invalid response: {22: 11997, 23: 1000000, 27: 22995, 28: 20997, 31: 20997, 34: 20997}
+Invalid response: first
+Invalid response: {8: 11997, 23: 1000000, 27: 22995, 28: 20997, 31: 20997, 34: 20997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 1998, 10: 1998, 23: 11997, 29: 11997, 31: 10998, 34: 11097}
+Invalid response: {8: -11997, 10: -11997, 21: -10998, 22: -11997, 29: -1998, 31: -9999, 34: -10998}
+Invalid response: {8: 1998, 10: 1998, 21: 10998, 22: 1998, 31: 19998, 34: 10998}
+Invalid response: {8: -19998, 10: -19998, 21: -9999, 22: -19998, 34: -9999}
+Invalid response: {8: 9999, 10: 9999, 22: 9999, 34: 1000000}
+Invalid response: first
+Invalid response: {8: 9999, 10: 9999, 21: 1000000, 22: 9999}
+Invalid response: first
+Invalid response: {10: 19998, 21: 1000000, 22: 19998, 34: 1000000}
+Invalid response: first
+Invalid response: {8: 19998, 21: 1000000, 22: 19998, 34: 1000000}
+Invalid response: first
+Invalid response: {8: 19998, 10: 19998, 21: 1000000, 34: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9999, 10: 9999, 21: 9999, 22: 9999, 29: 1000000, 34: 9999}
+Invalid response: first
+Invalid response: {8: 10998, 10: 10998, 22: 10998, 29: 1000000, 31: 19998, 34: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 10: 10998, 21: 19998, 22: 10998, 29: 1000000, 31: 19998}
+Invalid response: first
+Invalid response: {10: 11997, 21: 20997, 22: 11997, 29: 1000000, 31: 29997, 34: 20997}
+Invalid response: first
+Invalid response: {8: 11997, 21: 20997, 22: 11997, 29: 1000000, 31: 29997, 34: 20997}
+Invalid response: first
+Invalid response: {8: 11997, 10: 11997, 21: 20997, 29: 1000000, 31: 29997, 34: 21096}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9000, 10: 9000, 22: 9000, 34: 9999, 35: 1000000}
+Invalid response: first
+Invalid response: {8: 9000, 10: 9000, 22: 9000, 31: 9999, 35: 1000000}
+Invalid response: first
+Invalid response: {10: 9900, 22: 9900, 31: 9999, 34: 9999, 35: 1000000}
+Invalid response: first
+Invalid response: {8: 9900, 22: 9900, 31: 9999, 34: 9999, 35: 1000000}
+Invalid response: first
+Invalid response: {8: 9900, 10: 9999, 31: 9999, 34: 9999, 35: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: ------- 0 35
+</span>= 35
+
+<span class="command">play b c3
+</span>= d5
+
+<span class="command">play w c2
+</span>= 
+
+<span class="command">play b d4
+</span>= 
+
+<span class="command">play w b2
+</span>= 
+
+<span class="command">play b d2
+</span>= 
+
+<span class="command">play w b4
+</span>= 
+
+<span class="command">play b a2
+</span>= 
+
+<span class="command">play w b3
+</span>= 
+
+<span class="command">play b b2
+</span>= 
+
+<span class="command">play w b5
+</span>= 
+
+<span class="command">play b c2
+</span>= 
+
+<span class="command">play w e2
+</span>= 
+
+<span class="command">play b a1
+</span>= 
+
+<span class="command">play w e5
+</span>= 
+
+<span class="command">play b e3
+</span>= 
+
+<span class="command">play w e1
+</span>= 
+
+<span class="command">play b a3
+</span>= 
+
+<span class="command">play w d2
+</span>= 
+
+<span class="command">play b a4
+</span>= 
+
+<span class="command">play w a5
+</span>= 
+
+<span class="command">timelimit 1
+</span>= 
+
+<span class="test"><a name="60">60 solve
+</a>#?[draw c3]
+</span><span class="fail">= 
+
+</span>
+</pre>
+<hr style="margin:1em" size="1">
+<pre style="margin:1em">
+cputime
+= 
+
+quit
+<span class="invalid">Invalid response: {8: -10989, 9: -10899, 10: -10989, 21: -900, 22: -10989, 27: -10899, 29: -10989, 33: -9900, 34: -9990}
+Invalid response: {8: 900, 9: 999, 10: 900, 22: 900, 27: 999, 29: 900, 33: 9999, 34: 9900}
+Invalid response: {8: -9999, 9: -9999, 10: -9999, 22: -9999, 27: -9999, 29: -9999, 34: 0}
+Invalid response: {8: -9900, 9: -9000, 10: -9900, 22: -9900, 27: -9000, 29: -9900, 33: 999}
+Invalid response: {8: -999, 9: 0, 10: -999, 22: -999, 27: 0, 29: -999}
+Invalid response: {8: -999, 10: -999, 22: -999, 27: -999, 29: -999, 33: 0, 34: 0}
+Invalid response: {8: -999, 9: -999, 10: -999, 22: -999, 29: -999, 33: 0, 34: 1098}
+Invalid response: {8: -1098, 9: -999, 10: -1098, 20: -99, 22: -99, 27: -999, 29: -1098, 33: -999}
+Invalid response: {8: 99, 9: 999, 10: 99, 22: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {8: -999, 10: -999, 22: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {8: 99, 9: 999, 10: 2097, 20: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {8: -2097, 9: -1998, 16: -1098, 20: -1098, 22: -99, 27: -1998, 29: -2097, 33: -1998}
+Invalid response: {8: 99, 9: 999, 16: 99, 20: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {8: -99, 16: -999, 20: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {8: 1098, 9: 1998, 20: 10098, 22: 10098, 27: 1998, 29: 1098, 33: 1998}
+Invalid response: {8: -99, 9: -9999, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 14: 1098, 20: 10098, 22: 9099, 27: 999, 29: 99, 33: 999}
+Invalid response: {9: -9999, 14: 8991, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {9: -8901, 21: 10098, 22: 9, 27: -8901, 28: -8991, 29: -8991, 33: -8901}
+Invalid response: {9: -9999, 22: -99, 27: -9999, 28: -10098, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 27: 999, 28: 11097, 29: 99, 33: 999}
+Invalid response: {9: -10998, 16: -10098, 22: -99, 27: -10998, 29: -11097, 33: -10998}
+Invalid response: {9: 999, 16: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {16: 19998, 22: 1000000, 27: 10998, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 19998, 22: 1000000, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 19998, 22: 1000000, 27: 10998, 29: 10998}
+Invalid response: first
+Invalid response: {9: 11997, 16: 20097, 22: 1000000, 27: 11997, 33: 11997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {22: 1000000, 27: 9999, 28: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 28: 10197, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 27: 9999, 28: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 10098, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {14: 9900, 27: 0, 29: -999, 33: 0}
+Invalid response: {21: 999, 27: -9000, 28: 1098, 29: -9900, 33: -9000}
+Invalid response: {16: 8901, 21: 9000, 22: 900, 27: -999, 29: -1098, 33: -999}
+Invalid response: {16: 9999, 22: 0, 27: -9000, 29: -9000, 33: -9000}
+Invalid response: {22: 0, 27: -9999, 29: -9999, 33: -9999}
+Invalid response: {21: 10998, 22: 99, 27: -8001, 29: -8901, 33: -8001}
+Invalid response: {22: -999, 27: -9999, 29: -10998, 33: -9999}
+Invalid response: {27: 9999, 29: 999, 33: 9999}
+Invalid response: {29: -999, 33: 0}
+Invalid response: {22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {22: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {16: 99, 21: 999, 27: 0, 29: -900, 33: 0}
+Invalid response: {16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {16: 10998, 21: 10998, 22: 18999, 29: 999, 33: 999}
+Invalid response: {16: 0, 21: 0, 29: -999, 33: -18999}
+Invalid response: {16: 10998, 21: 10998, 22: 18999, 27: 999, 29: 999}
+Invalid response: {16: 0, 21: 0, 27: -18999, 29: -999}
+Invalid response: {16: 11097, 21: 11997, 22: 19098, 27: 1998, 33: 1998}
+Invalid response: {16: -99, 21: 0, 27: -18999, 33: -18999}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 0, 29: 0, 33: 0}
+Invalid response: {14: 0, 27: 0, 29: 0}
+Invalid response: {14: 999, 27: 9999, 33: 9999}
+Invalid response: {14: 9000, 33: 0}
+Invalid response: {21: 9999, 28: 1998, 33: 0}
+Invalid response: {28: -9999, 33: 0}
+Invalid response: {14: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 14: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 99, 9: 999, 27: 999, 29: 99, 33: 999}
+Invalid response: {8: 900, 27: 0, 29: -999, 33: 0}
+Invalid response: {9: 0, 10: 1098, 14: 99, 20: 99, 27: 0, 29: -900, 33: 0}
+Invalid response: {9: -999, 14: 10791, 16: -99, 20: 8901, 22: 900, 27: -999, 29: -1098, 33: -999}
+Invalid response: {9: -10701, 16: -8892, 20: 108, 21: -8802, 22: -8991, 27: -10701, 28: -9891, 29: -10791, 33: -10701}
+Invalid response: {9: -99, 16: 8991, 21: 9900, 22: 990, 27: -99, 28: -9, 29: -108, 33: -99}
+Invalid response: {9: -9900, 16: 999, 22: -9000, 27: -9900, 28: 1008, 29: -9900, 33: -9900}
+Invalid response: {9: -999, 14: -1008, 16: 8991, 21: 9000, 22: 990, 27: -999, 29: -1008, 33: -999}
+Invalid response: {9: -9000, 14: -9000, 16: 9999, 22: 0, 27: -9000, 29: -9000, 33: -9000}
+Invalid response: {9: -9999, 14: 9009, 22: 0, 27: -9999, 29: -9999, 33: -9999}
+Invalid response: {9: -9000, 15: -9000, 16: 9990, 22: -9, 27: -9000, 29: -9009, 33: -9000}
+Invalid response: {9: -9900, 15: -9900, 22: 9, 27: -9900, 29: -9990, 33: -9900}
+Invalid response: {9: 0, 15: 0, 27: 0, 29: -9, 33: 0}
+Invalid response: {15: 9999, 22: 1000000, 27: 9999, 29: 9900, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 27: 9999, 29: 9900, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 15: 9999, 22: 1000000, 29: 9900, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 15: 9999, 22: 1000000, 27: 9999, 29: 9900}
+Invalid response: first
+Invalid response: {9: 9999, 15: 9999, 22: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 14: 0, 27: 0, 29: 0, 33: 0}
+Invalid response: {14: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 29: 9999, 33: 1000000}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: -8901, 14: -8991, 21: 10098, 22: 9, 27: -8901, 29: -8991, 33: -8901}
+Invalid response: {9: -9999, 14: 8991, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {9: -8901, 21: 10098, 22: 9, 27: -8901, 28: -8991, 29: -8991, 33: -8901}
+Invalid response: {9: -9999, 22: -99, 27: -9999, 28: -10098, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 27: 999, 28: 1000000, 29: 99, 33: 999}
+Invalid response: first
+Invalid response: {22: 1000000, 27: 9999, 28: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 28: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 27: 9999, 28: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 10098, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {14: 9900, 27: 0, 29: -999, 33: 0}
+Invalid response: {21: 999, 27: -9000, 28: 1000000, 29: -9900, 33: -9000}
+Invalid response: first
+Invalid response: {14: 0, 29: 0, 33: 0}
+Invalid response: {14: 0, 27: 0, 29: 0}
+Invalid response: {14: 999, 27: 9999, 33: 9999}
+Invalid response: {14: 9000, 33: 0}
+Invalid response: {21: 9999, 28: 1000000, 33: 0}
+Invalid response: first
+Invalid response: {14: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 14: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: -900, 14: -990, 16: 9, 21: 99, 27: -900, 29: -990, 33: -900}
+Invalid response: {9: 0, 14: 990, 16: -99, 27: 0, 29: -99, 33: 0}
+Invalid response: {9: -900, 16: 9, 21: 99, 27: -900, 28: -990, 29: -990, 33: -900}
+Invalid response: {9: 0, 16: -99, 27: 0, 28: -99, 29: -99, 33: 0}
+Invalid response: {14: 0, 16: 0, 27: 0, 29: 0, 33: 0}
+Invalid response: {9: 0, 14: 0, 16: 0, 29: 0, 33: 0}
+Invalid response: {9: 0, 14: 0, 16: 0, 27: 0, 29: 0}
+Invalid response: {9: 999, 14: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {14: 9900, 27: 0, 29: -999, 33: 0}
+Invalid response: {21: 999, 27: -9000, 28: 1000000, 29: -9900, 33: -9000}
+Invalid response: first
+Invalid response: {14: 0, 29: 0, 33: 0}
+Invalid response: {14: 0, 27: 0, 29: 0}
+Invalid response: {14: 999, 27: 9999, 33: 9999}
+Invalid response: {14: 9000, 33: 0}
+Invalid response: {21: 9999, 28: 1000000, 33: 0}
+Invalid response: first
+Invalid response: {14: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 99, 16: 99, 27: 999, 33: 999}
+Invalid response: {14: 900, 16: -999, 27: 0, 33: 0}
+Invalid response: {16: 99, 21: 999, 27: 0, 28: -900, 33: 0}
+Invalid response: {16: -999, 27: 0, 28: -999, 33: 0}
+Invalid response: {14: 0, 16: 0, 33: 0}
+Invalid response: {14: 0, 16: 0, 27: 0}
+Invalid response: {14: 999, 27: 9999, 33: 9999}
+Invalid response: {14: 9000, 33: 0}
+Invalid response: {21: 9999, 28: 1000000, 33: 0}
+Invalid response: first
+Invalid response: {14: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 999, 16: 10998, 21: 10998, 22: 18999, 27: 999, 29: 999, 33: 999}
+Invalid response: {14: -18999, 16: 0, 21: 0, 27: -18999, 29: -990, 33: -18999}
+Invalid response: {9: 999, 14: 999, 16: 10998, 21: 10998, 22: 18999, 29: 999, 33: 999}
+Invalid response: {9: -18999, 14: -18999, 16: 0, 21: 0, 29: -990, 33: -18999}
+Invalid response: {9: 999, 14: 999, 16: 10998, 21: 10998, 22: 18999, 27: 999, 29: 999}
+Invalid response: {9: -18999, 14: -18999, 16: 0, 21: 0, 27: -18999, 29: -990}
+Invalid response: {9: 1098, 16: 11007, 21: 11097, 22: 19008, 27: 1098, 29: 1008, 33: 1098}
+Invalid response: {9: -18999, 16: -9, 21: 0, 27: -18999, 29: -999, 33: -18999}
+Invalid response: {9: 1098, 14: 1008, 16: 11007, 21: 11097, 22: 19008, 27: 1098, 33: 1098}
+Invalid response: {9: -18999, 14: -19008, 16: -9, 21: 0, 27: -18999, 33: -18999}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: -8901, 21: 10098, 22: 9, 27: -8901, 28: -8991, 29: -8991, 33: -8901}
+Invalid response: {9: -9999, 22: -99, 27: -9999, 28: -10098, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 27: 999, 28: 11097, 29: 99, 33: 999}
+Invalid response: {9: -10998, 16: -10098, 22: -99, 27: -10998, 29: -11097, 33: -10998}
+Invalid response: {9: 999, 16: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {16: 19998, 22: 1000000, 27: 10998, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 19998, 22: 1000000, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 19998, 22: 1000000, 27: 10998, 29: 10998}
+Invalid response: first
+Invalid response: {9: 11997, 16: 20097, 22: 1000000, 27: 11997, 33: 11997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {22: 1000000, 27: 9999, 28: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 28: 10197, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 27: 9999, 28: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 10098, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: -900, 16: 9, 21: 99, 27: -900, 28: -990, 29: -990, 33: -900}
+Invalid response: {9: 0, 16: -99, 27: 0, 28: -99, 29: -99, 33: 0}
+Invalid response: {9: 99, 16: 1008, 21: 10098, 22: 9009, 27: 99, 29: 9, 33: 99}
+Invalid response: {9: -9999, 16: -10098, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 16: 11097, 27: 999, 29: 99, 33: 999}
+Invalid response: {9: -10998, 22: -99, 27: -10998, 28: -10098, 29: -11097, 33: -10998}
+Invalid response: {9: 999, 27: 999, 28: 99, 29: 99, 33: 999}
+Invalid response: {27: 0, 28: -999, 29: -999, 33: 0}
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {22: 1000000, 27: 10998, 28: 19998, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 28: 1000000, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 19998, 29: 10998}
+Invalid response: first
+Invalid response: {9: 11997, 22: 1000000, 27: 11997, 28: 20097, 33: 11997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {16: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {16: 1998, 21: 10098, 22: 9999, 27: 99, 28: 999, 29: 99, 33: 99}
+Invalid response: {16: -9999, 22: 0, 27: 0, 28: -9999, 29: -10098, 33: -10098}
+Invalid response: {9: 99, 16: 1998, 21: 10098, 22: 9999, 28: 2007, 29: 99, 33: 99}
+Invalid response: {9: 0, 16: -9999, 22: 0, 28: -9999, 29: -10098, 33: -10098}
+Invalid response: {9: 99, 16: 1998, 21: 10098, 22: 9999, 27: 99, 28: 999, 29: 99}
+Invalid response: {9: -10098, 16: -9999, 22: 0, 27: -10098, 28: -9999, 29: -10098}
+Invalid response: {9: 198, 16: 2007, 21: 10197, 22: 10008, 27: 198, 28: 1008, 33: 198}
+Invalid response: {9: -10098, 16: -10098, 22: -99, 27: -10098, 28: -10098, 33: -10098}
+Invalid response: {9: 999, 16: 99, 27: 999, 28: 99, 33: 999}
+Invalid response: {16: -999, 27: 0, 28: -999, 33: 0}
+Invalid response: {16: 10998, 22: 1000000, 27: 10098, 28: 10998, 33: 10098}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10098, 16: 10998, 22: 1000000, 28: 11097, 33: 10098}
+Invalid response: first
+Invalid response: {9: 10998, 16: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10098, 16: 10998, 22: 1000000, 27: 10098, 28: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: -8001, 14: 1098, 16: 99, 22: 99, 27: -8001, 29: -8901, 33: -8001}
+Invalid response: {9: -999, 16: -99, 22: -99, 27: -999, 29: -1098, 33: -999}
+Invalid response: {9: 999, 22: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {22: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {9: 999, 16: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {16: 9999, 22: 9999, 27: 999, 29: 999, 33: 999}
+Invalid response: {22: 0, 27: -9900, 29: -9999, 33: -9999}
+Invalid response: {9: 999, 16: 9999, 22: 9999, 29: 999, 33: 999}
+Invalid response: {9: -9900, 22: 0, 29: -9999, 33: -9999}
+Invalid response: {9: 999, 16: 9999, 22: 9999, 27: 999, 29: 999}
+Invalid response: {9: -9999, 22: 0, 27: -9999, 29: -9999}
+Invalid response: {9: 1998, 16: 10098, 22: 10098, 27: 1998, 33: 1998}
+Invalid response: {9: -9999, 22: -99, 27: -9999, 33: -9999}
+Invalid response: {9: 999, 27: 999, 33: 999}
+Invalid response: {27: 0, 33: 0}
+Invalid response: {22: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 27: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 14: 99, 16: -900, 20: 99, 27: 0, 29: -900, 33: 0}
+Invalid response: {9: 0, 16: -99, 20: -99, 27: 0, 29: -99, 33: 0}
+Invalid response: {9: 999, 14: 1098, 20: 10098, 22: 9099, 27: 999, 29: 99, 33: 999}
+Invalid response: {9: -9999, 14: 8991, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {9: -8901, 21: 10098, 22: 9, 27: -8901, 28: -8991, 29: -8991, 33: -8901}
+Invalid response: {9: -9999, 22: -99, 27: -9999, 28: -10098, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 27: 999, 28: 11097, 29: 99, 33: 999}
+Invalid response: {9: -10998, 16: -10098, 22: -99, 27: -10998, 29: -11097, 33: -10998}
+Invalid response: {9: 999, 16: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {16: 19998, 22: 1000000, 27: 10998, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 19998, 22: 1000000, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 19998, 22: 1000000, 27: 10998, 29: 10998}
+Invalid response: first
+Invalid response: {9: 11997, 16: 20097, 22: 1000000, 27: 11997, 33: 11997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {22: 1000000, 27: 9999, 28: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 28: 10197, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 27: 9999, 28: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 10098, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {14: 9900, 27: 0, 29: -999, 33: 0}
+Invalid response: {21: 999, 27: -9000, 28: 1098, 29: -9900, 33: -9000}
+Invalid response: {16: 8901, 21: 9000, 22: 900, 27: -999, 29: -1098, 33: -999}
+Invalid response: {16: 9999, 22: 0, 27: -9000, 29: -9000, 33: -9000}
+Invalid response: {22: 0, 27: -9999, 29: -9999, 33: -9999}
+Invalid response: {21: 10998, 22: 99, 27: -8001, 29: -8901, 33: -8001}
+Invalid response: {22: -999, 27: -9999, 29: -10998, 33: -9999}
+Invalid response: {27: 9999, 29: 999, 33: 9999}
+Invalid response: {29: -999, 33: 0}
+Invalid response: {22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {22: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {16: 99, 21: 999, 27: 0, 29: -900, 33: 0}
+Invalid response: {16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {16: 10998, 21: 10998, 22: 18999, 29: 999, 33: 999}
+Invalid response: {16: 0, 21: 0, 29: -999, 33: -18999}
+Invalid response: {16: 10998, 21: 10998, 22: 18999, 27: 999, 29: 999}
+Invalid response: {16: 0, 21: 0, 27: -18999, 29: -999}
+Invalid response: {16: 11097, 21: 11997, 22: 19098, 27: 1998, 33: 1998}
+Invalid response: {16: -99, 21: 0, 27: -18999, 33: -18999}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 0, 29: 0, 33: 0}
+Invalid response: {14: 0, 27: 0, 29: 0}
+Invalid response: {14: 999, 27: 9999, 33: 9999}
+Invalid response: {14: 9000, 33: 0}
+Invalid response: {21: 9999, 28: 1998, 33: 0}
+Invalid response: {28: -9999, 33: 0}
+Invalid response: {14: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 14: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 1998, 16: 9999, 20: 10998, 22: 18999, 27: 999, 29: 999, 33: 999}
+Invalid response: {14: 9000, 16: -9000, 20: 0, 27: -8901, 29: -999, 33: -18999}
+Invalid response: {16: 999, 20: 9999, 21: 999, 27: -9000, 28: 0, 29: -9000, 33: -9000}
+Invalid response: {16: 0, 21: 9000, 27: -9999, 28: -9000, 29: -90, 33: -9999}
+Invalid response: {16: 9999, 27: -9000, 28: 18999, 29: -9000, 33: -9000}
+Invalid response: {14: -18999, 16: 0, 21: 0, 27: -18999, 29: -990, 33: -18999}
+Invalid response: {21: 1000000, 27: 0, 28: 0, 29: 0, 33: 0}
+Invalid response: first
+Invalid response: {15: 99, 16: 1989, 21: 10098, 22: 9990, 27: 99, 28: 990, 33: 99}
+Invalid response: {15: -10098, 16: -9999, 22: 0, 27: -10098, 28: -9999, 33: -10098}
+Invalid response: {16: 9999, 21: 1000000, 27: 9000, 29: 9000, 33: 9000}
+Invalid response: first
+Invalid response: {16: 19998, 21: 1000000, 28: 19998, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {16: 19998, 21: 1000000, 27: 9999, 28: 18999, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9999, 16: 1000000, 27: 0, 29: 0, 33: 0}
+Invalid response: first
+Invalid response: {14: 1998, 15: 999, 16: 9999, 20: 10998, 22: 18999, 27: 999, 33: 999}
+Invalid response: {14: 9009, 15: -18999, 16: -9000, 20: 0, 27: -18999, 33: -18999}
+Invalid response: {15: -9000, 16: 990, 20: 9990, 21: 999, 27: -9000, 28: -9, 33: -9000}
+Invalid response: {15: -9900, 16: 9, 21: 9099, 27: -9900, 28: -8991, 33: -9900}
+Invalid response: {15: -9000, 16: 9900, 27: -9000, 28: 18990, 33: -9000}
+Invalid response: {14: -18990, 15: -18900, 16: 9, 21: 99, 27: -18900, 33: -18900}
+Invalid response: {14: -99, 15: 0, 16: 1000000, 27: 0, 33: 0}
+Invalid response: first
+Invalid response: {14: -9, 15: 0, 21: 1000000, 27: 0, 33: 0}
+Invalid response: first
+Invalid response: {14: 18900, 16: 1000000, 21: 1000000, 27: 18999, 33: 18999}
+Invalid response: first
+Invalid response: {14: 18900, 15: 18999, 16: 1000000, 21: 1000000, 33: 18999}
+Invalid response: first
+Invalid response: {14: 18900, 15: 18999, 16: 1000000, 21: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: {15: 18999, 16: 1000000, 21: 1000000, 27: 18999, 33: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {15: 0, 21: 1000000, 27: 0, 28: -9, 33: 0}
+Invalid response: first
+Invalid response: {15: 9000, 16: 9990, 21: 1000000, 27: 9000, 33: 9000}
+Invalid response: first
+Invalid response: {16: 19989, 21: 1000000, 27: 9999, 28: 18900, 33: 9999}
+Invalid response: first
+Invalid response: {15: 9999, 16: 19899, 21: 1000000, 28: 19890, 33: 9999}
+Invalid response: first
+Invalid response: {15: 9999, 16: 19899, 21: 1000000, 27: 9999, 28: 18900}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9999, 15: 0, 16: 1000000, 27: 0, 33: 0}
+Invalid response: first
+Invalid response: {14: 9999, 15: 9000, 20: 1000000, 27: 9000, 33: 9000}
+Invalid response: first
+Invalid response: {14: 19998, 16: 1000000, 20: 1000000, 27: 18999, 33: 18999}
+Invalid response: first
+Invalid response: {14: 19998, 15: 18999, 16: 1000000, 20: 1000000, 33: 18999}
+Invalid response: first
+Invalid response: {14: 19998, 15: 18999, 16: 1000000, 20: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9900, 15: 9000, 16: 1000000, 20: 18900, 21: 18999, 29: 8901, 33: 9000}
+Invalid response: first
+Invalid response: {14: 9999, 20: 1000000, 27: 9000, 29: 9000, 33: 9000}
+Invalid response: first
+Invalid response: {14: 19998, 16: 1000000, 20: 1000000, 27: 18999, 29: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 1998, 16: 9999, 20: 10998, 22: 18999, 29: 999, 33: 999}
+Invalid response: {9: -8901, 14: 9000, 16: -9000, 20: 0, 29: -999, 33: -18999}
+Invalid response: {9: -9000, 16: 999, 20: 9999, 21: 999, 28: 10008, 29: -9000, 33: -9000}
+Invalid response: {9: -9999, 16: 891, 20: -9, 21: -8100, 26: -9, 27: -9900, 29: 0, 33: -9999}
+Invalid response: {9: -801, 20: 9108, 21: 9198, 26: 2007, 27: 99, 29: 9, 33: -801}
+Invalid response: {9: -9099, 20: 9801, 26: -99, 27: -9000, 29: -9, 33: -9099}
+Invalid response: {9: -8901, 26: 1098, 27: -8001, 29: -8901, 33: -8901}
+Invalid response: {9: -999, 27: 0, 29: -9, 33: -999}
+Invalid response: {9: 99, 15: 99, 20: 10008, 22: 9009, 26: 1008, 27: 99, 33: 99}
+Invalid response: {9: -9999, 15: -9999, 22: -9, 26: -10008, 27: -9999, 33: -9999}
+Invalid response: {9: 99, 15: 99, 26: 9, 27: 99, 33: 99}
+Invalid response: {15: 0, 26: -99, 27: 0, 33: 0}
+Invalid response: {15: 9999, 22: 1000000, 26: 9999, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 26: 9999, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 15: 9999, 22: 1000000, 26: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 15: 9999, 22: 1000000, 26: 9999, 27: 9999}
+Invalid response: first
+Invalid response: {9: 10098, 15: 10098, 22: 1000000, 27: 10098, 33: 10098}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 20: 1000000, 27: 999, 29: 99, 33: 999}
+Invalid response: first
+Invalid response: {9: 9000, 20: 1000000, 26: 9999, 29: 9000, 33: 9000}
+Invalid response: first
+Invalid response: {20: 1000000, 26: 10998, 27: 9999, 29: 9999, 33: 9099}
+Invalid response: first
+Invalid response: {9: 9099, 20: 1000000, 26: 10998, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 9, 15: 9, 16: 9099, 20: 1899, 21: 1008, 22: 9900, 26: 1098, 27: 9, 33: 9}
+Invalid response: {9: -9891, 15: -9891, 16: 999, 20: 99, 21: -7992, 26: 0, 27: -9891, 33: -9891}
+Invalid response: {9: -990, 15: -990, 20: 9000, 21: 9009, 26: 999, 27: -990, 33: -990}
+Invalid response: {9: -9000, 15: -9000, 20: 9990, 26: -9, 27: -9000, 33: -9000}
+Invalid response: {9: -9900, 15: -9900, 26: 9, 27: -9900, 33: -9900}
+Invalid response: {9: 0, 15: 0, 27: 0, 33: 0}
+Invalid response: {9: 99, 15: 99, 20: 1000000, 27: 99, 33: 99}
+Invalid response: first
+Invalid response: {15: 9000, 20: 1000000, 26: 9999, 27: 9000, 33: 9000}
+Invalid response: first
+Invalid response: {9: 9000, 20: 1000000, 26: 9999, 27: 9000, 33: 9000}
+Invalid response: first
+Invalid response: {9: 9000, 15: 9000, 20: 1000000, 26: 9999, 33: 9000}
+Invalid response: first
+Invalid response: {9: 9000, 15: 9000, 20: 1000000, 26: 9999, 27: 9000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: -90, 15: -90, 16: 1000000, 21: 9, 26: 9999, 27: -90, 33: -90}
+Invalid response: first
+Invalid response: {9: 9, 15: 9, 16: 1000000, 20: 18999, 21: 10008, 27: 9, 33: 9}
+Invalid response: first
+Invalid response: {9: 8001, 15: 8001, 16: 1000000, 20: 8991, 26: 9990, 27: 8001, 33: 8001}
+Invalid response: first
+Invalid response: {15: 9900, 16: 1000000, 20: 19890, 21: 18999, 26: 10989, 27: 9900, 33: 9900}
+Invalid response: first
+Invalid response: {9: 9900, 16: 1000000, 20: 19890, 21: 18999, 26: 10989, 27: 9900, 33: 9900}
+Invalid response: first
+Invalid response: {9: 9900, 15: 9900, 16: 1000000, 20: 19890, 21: 18999, 26: 10989, 33: 9900}
+Invalid response: first
+Invalid response: {9: 9900, 15: 9900, 16: 1000000, 20: 19890, 21: 18999, 26: 10989, 27: 9900}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 99, 16: 1000000, 21: 198, 26: 11007, 27: 999, 29: 909, 33: 99}
+Invalid response: first
+Invalid response: {9: 99, 16: 1000000, 20: 19008, 21: 10098, 27: 99, 29: 9, 33: 99}
+Invalid response: first
+Invalid response: {9: 8100, 16: 1000000, 20: 9099, 26: 10998, 27: 9000, 29: 9000, 33: 8100}
+Invalid response: first
+Invalid response: {9: 9900, 16: 1000000, 20: 19899, 21: 18999, 26: 10998, 29: 9900, 33: 9900}
+Invalid response: first
+Invalid response: {16: 1000000, 20: 19998, 21: 19098, 26: 11997, 27: 10899, 29: 10899, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 1000000, 20: 19998, 21: 19098, 26: 11997, 27: 10899, 29: 10899}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 14: 9999, 16: 1000000, 29: 0, 33: 0}
+Invalid response: first
+Invalid response: {9: 999, 14: 1998, 15: 999, 16: 9999, 20: 10998, 22: 18999, 33: 999}
+Invalid response: {9: -18999, 14: 9009, 15: -18999, 16: -9000, 20: 0, 33: -18999}
+Invalid response: {9: -9000, 15: -9000, 16: 990, 20: 9990, 21: 999, 28: 9900, 33: -9000}
+Invalid response: {9: -9900, 15: -9900, 16: 9, 21: 9099, 28: -8991, 33: -9900}
+Invalid response: {9: -9000, 15: -9000, 16: 9900, 28: 1000000, 33: -9000}
+Invalid response: first
+Invalid response: {9: 0, 15: 0, 21: 1000000, 28: 9000, 33: 0}
+Invalid response: first
+Invalid response: {9: 9000, 15: 9000, 16: 9990, 21: 1000000, 33: 9000}
+Invalid response: first
+Invalid response: {15: 9999, 16: 19899, 21: 1000000, 28: 19890, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 19989, 21: 1000000, 28: 19890, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 15: 9999, 16: 19899, 21: 1000000, 28: 19890}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 14: 9999, 15: 0, 16: 1000000, 33: 0}
+Invalid response: first
+Invalid response: {9: 9000, 14: 9999, 15: 9000, 20: 1000000, 33: 9000}
+Invalid response: first
+Invalid response: {14: 19998, 15: 18999, 16: 1000000, 20: 1000000, 33: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 16: 1000000, 20: 1000000, 33: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 15: 18999, 16: 1000000, 20: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9900, 15: 9000, 16: 1000000, 20: 18900, 21: 18999, 29: 8901, 33: 9000}
+Invalid response: first
+Invalid response: {9: 9000, 14: 9999, 20: 1000000, 29: 9000, 33: 9000}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 16: 1000000, 20: 1000000, 29: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 1998, 16: 9999, 20: 10998, 22: 18999, 27: 999, 29: 999}
+Invalid response: {9: -18999, 14: 9000, 16: -9000, 20: 0, 27: -18999, 29: -999}
+Invalid response: {9: -9000, 16: 999, 20: 9999, 21: 999, 27: -9000, 28: 0, 29: -9000}
+Invalid response: {9: -9999, 16: 0, 21: 9000, 27: -9999, 28: -9000, 29: -90}
+Invalid response: {9: -9000, 16: 9999, 27: -9000, 28: 18999, 29: -9000}
+Invalid response: {9: -18999, 14: -18999, 16: 0, 21: 0, 27: -18999, 29: -990}
+Invalid response: {9: 0, 21: 1000000, 27: 0, 28: 0, 29: 0}
+Invalid response: first
+Invalid response: {9: 99, 15: 99, 16: 1989, 21: 10098, 22: 9990, 27: 99, 28: 990}
+Invalid response: {9: -10098, 15: -10098, 16: -9999, 22: 0, 27: -10098, 28: -9999}
+Invalid response: {9: 9000, 16: 9999, 21: 1000000, 27: 9000, 29: 9000}
+Invalid response: first
+Invalid response: {16: 19998, 21: 1000000, 27: 9999, 28: 18999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 19998, 21: 1000000, 28: 19998, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 14: 9999, 16: 1000000, 27: 0, 29: 0}
+Invalid response: first
+Invalid response: {9: 999, 14: 1998, 15: 999, 16: 9999, 20: 10998, 22: 18999, 27: 999}
+Invalid response: {9: -18999, 14: 9009, 15: -18999, 16: -9000, 20: 0, 27: -18999}
+Invalid response: {9: -9000, 15: -9000, 16: 990, 20: 9990, 21: 999, 27: -9000, 28: -9}
+Invalid response: {9: -9900, 15: -9900, 16: 9, 21: 9099, 27: -9900, 28: -8991}
+Invalid response: {9: -9000, 15: -9000, 16: 9900, 27: -9000, 28: 18990}
+Invalid response: {9: -18900, 14: -18990, 15: -18900, 16: 9, 21: 99, 27: -18900}
+Invalid response: {9: 0, 14: -99, 15: 0, 16: 1000000, 27: 0}
+Invalid response: first
+Invalid response: {9: 0, 14: -9, 15: 0, 21: 1000000, 27: 0}
+Invalid response: first
+Invalid response: {14: 18900, 15: 18999, 16: 1000000, 21: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 18900, 16: 1000000, 21: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 18900, 15: 18999, 16: 1000000, 21: 1000000}
+Invalid response: first
+Invalid response: {9: 18999, 15: 18999, 16: 1000000, 21: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 15: 0, 21: 1000000, 27: 0, 28: -9}
+Invalid response: first
+Invalid response: {9: 9000, 15: 9000, 16: 9990, 21: 1000000, 27: 9000}
+Invalid response: first
+Invalid response: {15: 9999, 16: 19899, 21: 1000000, 27: 9999, 28: 18900}
+Invalid response: first
+Invalid response: {9: 9999, 16: 19989, 21: 1000000, 27: 9999, 28: 18900}
+Invalid response: first
+Invalid response: {9: 9999, 15: 9999, 16: 19899, 21: 1000000, 28: 19890}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 14: 9999, 15: 0, 16: 1000000, 27: 0}
+Invalid response: first
+Invalid response: {9: 9000, 14: 9999, 15: 9000, 20: 1000000, 27: 9000}
+Invalid response: first
+Invalid response: {14: 19998, 15: 18999, 16: 1000000, 20: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 16: 1000000, 20: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 15: 18999, 16: 1000000, 20: 1000000}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 9000, 14: 9999, 20: 1000000, 27: 9000, 29: 9000}
+Invalid response: first
+Invalid response: {14: 19998, 16: 1000000, 20: 1000000, 27: 18999, 29: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 16: 1000000, 20: 1000000, 29: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 1998, 14: 2097, 16: 10098, 20: 11097, 22: 19098, 27: 1998, 33: 1998}
+Invalid response: {9: -18999, 14: 8991, 16: -9099, 20: -99, 27: -18999, 33: -18999}
+Invalid response: {9: -8901, 16: 1008, 20: 10008, 21: 1098, 27: -8901, 28: 9, 33: -8901}
+Invalid response: {9: -9999, 16: -9, 21: 9000, 27: -9999, 28: -9009, 33: -9999}
+Invalid response: {9: -9000, 16: 9999, 27: -9000, 28: 19008, 33: -9000}
+Invalid response: {9: -18999, 14: -19008, 16: -9, 21: 0, 27: -18999, 33: -18999}
+Invalid response: {9: 99, 21: 1000000, 27: 99, 28: 9, 33: 99}
+Invalid response: first
+Invalid response: {9: 9099, 16: 10008, 21: 1000000, 27: 9099, 33: 9099}
+Invalid response: first
+Invalid response: {16: 19998, 21: 1000000, 27: 9999, 28: 18999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 19998, 21: 1000000, 28: 19908, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 19998, 21: 1000000, 27: 9999, 28: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 10098, 16: 1000000, 27: 999, 33: 999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 10098, 20: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {14: 19998, 16: 1000000, 20: 1000000, 27: 18999, 33: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 16: 1000000, 20: 1000000, 33: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 16: 1000000, 20: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 0, 29: 0, 33: 0}
+Invalid response: {8: 0, 27: 0, 29: 0}
+Invalid response: {8: 999, 27: 9999, 33: 9999}
+Invalid response: {8: 0, 33: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10998, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 1098, 9: 1998, 16: 10098, 22: 10098, 27: 1998, 29: 1098, 33: 1998}
+Invalid response: {8: -10098, 9: -9999, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {8: 99, 9: 999, 27: 999, 29: 99, 33: 999}
+Invalid response: {8: -99, 27: 0, 29: -999, 33: 0}
+Invalid response: {8: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10998, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 1998, 16: 10998, 20: 10998, 22: 19998, 27: 1998, 29: 1998, 33: 1998}
+Invalid response: {8: -19998, 16: -9999, 20: -9999, 27: -9900, 29: -19998, 33: -19998}
+Invalid response: {8: 9900, 15: 9999, 16: 1000000, 20: 18900, 21: 19998, 29: 9900, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 20: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 16: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {16: 1000000, 20: 1000000, 27: 19998, 29: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 16: 1000000, 20: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 16: 1000000, 20: 1000000, 27: 19998, 29: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 1998, 9: 1998, 16: 10998, 20: 10998, 22: 19998, 29: 1998, 33: 1998}
+Invalid response: {8: -19998, 9: -9900, 16: -9999, 20: -9999, 29: -19998, 33: -19998}
+Invalid response: {8: 9900, 15: 9999, 16: 1000000, 20: 18900, 21: 19998, 29: 9900, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 20: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 16: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 19998, 16: 1000000, 20: 1000000, 29: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 9: 19998, 16: 1000000, 20: 1000000, 33: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 9: 19998, 16: 1000000, 20: 1000000, 29: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 1998, 9: 1998, 16: 10998, 20: 10998, 22: 19998, 27: 1998, 29: 1998}
+Invalid response: {8: -19998, 9: -19998, 16: -9999, 20: -9999, 27: -19998, 29: -19998}
+Invalid response: {8: 9999, 9: 9999, 20: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 16: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 19998, 16: 1000000, 20: 1000000, 27: 19998, 29: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 16: 1000000, 20: 1000000, 27: 19998, 29: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 9: 19998, 16: 1000000, 20: 1000000, 29: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 9: 19998, 16: 1000000, 20: 1000000, 27: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 2997, 16: 11097, 20: 11097, 22: 20097, 27: 2997, 29: 2097, 33: 2997}
+Invalid response: {9: -19998, 16: -10098, 20: -10098, 27: -19998, 29: -2007, 33: -19998}
+Invalid response: {9: 2097, 15: 2097, 16: 11007, 20: 11007, 22: 20007, 27: 2097, 33: 2097}
+Invalid response: {9: -19998, 15: -19998, 16: -10008, 20: -10008, 27: -19998, 33: -19998}
+Invalid response: {9: 10098, 15: 10098, 20: 1000000, 27: 10098, 33: 10098}
+Invalid response: first
+Invalid response: {9: 10098, 15: 10098, 16: 1000000, 27: 10098, 33: 10098}
+Invalid response: first
+Invalid response: {15: 19998, 16: 1000000, 20: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 16: 1000000, 20: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 15: 19998, 16: 1000000, 20: 1000000, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 15: 19998, 16: 1000000, 20: 1000000, 27: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 10998, 20: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {16: 1000000, 20: 1000000, 27: 19998, 29: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 16: 1000000, 20: 1000000, 29: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 16: 1000000, 20: 1000000, 27: 19998, 29: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 2097, 9: 2997, 16: 11097, 20: 11097, 22: 20097, 27: 2997, 33: 2997}
+Invalid response: {8: -2007, 9: -19998, 16: -10098, 20: -10098, 27: -19998, 33: -19998}
+Invalid response: {9: 2097, 15: 2097, 16: 11007, 20: 11007, 22: 20007, 27: 2097, 33: 2097}
+Invalid response: {9: -19998, 15: -19998, 16: -10008, 20: -10008, 27: -19998, 33: -19998}
+Invalid response: {9: 10098, 15: 10098, 20: 1000000, 27: 10098, 33: 10098}
+Invalid response: first
+Invalid response: {9: 10098, 15: 10098, 16: 1000000, 27: 10098, 33: 10098}
+Invalid response: first
+Invalid response: {15: 19998, 16: 1000000, 20: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 16: 1000000, 20: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 15: 19998, 16: 1000000, 20: 1000000, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 15: 19998, 16: 1000000, 20: 1000000, 27: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 10098, 9: 10998, 20: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10998, 16: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {8: 19998, 16: 1000000, 20: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 9: 19998, 16: 1000000, 20: 1000000, 33: 19998}
+Invalid response: first
+Invalid response: {8: 19998, 9: 19998, 16: 1000000, 20: 1000000, 27: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 10: 999, 20: 9999, 22: 9999, 27: 999, 29: 999, 33: 999}
+Invalid response: {8: 0, 10: -9999, 22: 0, 27: 9099, 29: -9999, 33: -9999}
+Invalid response: {8: -9099, 10: -9099, 15: -9000, 21: 9999, 22: -99, 29: -9099, 33: -9000}
+Invalid response: {8: 0, 10: -9999, 15: -9999, 22: 0, 29: -9999, 33: -9999}
+Invalid response: {10: 999, 14: 999, 20: 9999, 22: 9000, 27: 0, 29: 0, 33: 0}
+Invalid response: {10: -9999, 14: 9000, 22: 0, 27: 9099, 29: -9999, 33: -9999}
+Invalid response: {10: -9009, 14: -9099, 15: -9000, 21: 9999, 22: -99, 29: -9099, 33: -9000}
+Invalid response: {10: -9999, 14: 9099, 15: -9999, 22: 0, 29: -9999, 33: -9999}
+Invalid response: {10: -9009, 15: -9000, 21: 9999, 22: -99, 28: 90, 29: -9099, 33: -9000}
+Invalid response: {10: -9999, 15: -9999, 22: 0, 28: -9999, 29: -9999, 33: -9999}
+Invalid response: {10: 10998, 14: 0, 15: 0, 29: 0, 33: 0}
+Invalid response: {8: -10998, 9: -10998, 14: -90, 15: -10998, 16: -9999, 22: 0, 29: -10998, 33: -10998}
+Invalid response: {14: 9999, 15: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 14: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 14: 9999, 15: 9999, 22: 1000000, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 14: 9999, 15: 9999, 22: 1000000, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: -8991, 21: 9999, 22: 0, 27: -9000, 28: -9000, 29: -9000, 33: -9000}
+Invalid response: {10: -9999, 22: 0, 27: 9099, 28: -9999, 29: -9999, 33: -9999}
+Invalid response: {10: -9009, 15: -9000, 21: 9999, 22: -99, 28: 90, 29: -9099, 33: -9000}
+Invalid response: {10: -9999, 15: -9999, 22: 0, 28: -9999, 29: -9999, 33: -9999}
+Invalid response: {10: 99, 27: 0, 28: 0, 29: 0, 33: 0}
+Invalid response: {8: -99, 9: 0, 27: 0, 28: -99, 29: -99, 33: 0}
+Invalid response: {22: 1000000, 27: 9999, 28: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 10098, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 10098, 22: 1000000, 27: 9999, 28: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 22: 1000000, 27: 9999, 28: 9999, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 11097, 14: 0, 27: 0, 29: 0, 33: 0}
+Invalid response: {8: -11097, 9: -10998, 14: -108, 16: -10098, 22: -99, 27: -10998, 29: -11097, 33: -10998}
+Invalid response: {8: 99, 9: 999, 14: 99, 16: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {8: -99, 14: 900, 16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {8: -900, 16: 99, 21: 999, 27: 0, 28: -900, 29: -900, 33: 0}
+Invalid response: {8: -99, 16: -999, 27: 0, 28: -999, 29: -999, 33: 0}
+Invalid response: {8: 0, 14: 0, 16: 0, 29: 0, 33: 0}
+Invalid response: {8: 0, 14: 0, 16: 0, 27: 0, 29: 0}
+Invalid response: {9: 999, 10: 99, 14: 99, 16: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {10: -999, 14: 900, 16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {10: -900, 16: 99, 21: 999, 27: 0, 28: -900, 29: -900, 33: 0}
+Invalid response: {10: -999, 16: -999, 27: 0, 28: -999, 29: -999, 33: 0}
+Invalid response: {10: 0, 14: 0, 16: 0, 29: 0, 33: 0}
+Invalid response: {10: 0, 14: 0, 16: 0, 27: 0, 29: 0}
+Invalid response: {14: 999, 16: 999, 27: 9999, 29: 999, 33: 9999}
+Invalid response: {14: 0, 16: -9999, 29: -999, 33: 0}
+Invalid response: {10: 11997, 14: 999, 27: 9999, 29: 999, 33: 9999}
+Invalid response: {14: -198, 16: -10998, 22: -999, 27: -10998, 29: -11997, 33: -10998}
+Invalid response: {16: 2097, 21: 11097, 22: 10098, 27: 1098, 28: 1098, 29: 198, 33: 1098}
+Invalid response: {16: -10998, 22: -999, 27: -10098, 28: -10998, 29: -11097, 33: -10098}
+Invalid response: {16: 999, 27: 9999, 28: 999, 29: 999, 33: 9999}
+Invalid response: {16: -9999, 28: -9999, 29: -9999, 33: 0}
+Invalid response: {16: 10998, 22: 1000000, 28: 1000000, 29: 10098, 33: 10098}
+Invalid response: first
+Invalid response: {16: 10998, 22: 1000000, 27: 10098, 28: 10998, 29: 10098}
+Invalid response: first
+Invalid response: {22: 1000000, 27: 19998, 28: 10998, 29: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {16: 10998, 22: 1000000, 27: 19998, 29: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {16: 11997, 22: 1000000, 27: 20097, 28: 11997, 33: 20097}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 999, 16: 999, 27: 9999, 29: 999, 33: 9999}
+Invalid response: {14: 0, 16: -9999, 29: -999, 33: 0}
+Invalid response: {14: 10998, 22: 1000000, 27: 19998, 29: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {14: 10998, 16: 19998, 22: 1000000, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {14: 10998, 16: 19998, 22: 1000000, 27: 10998, 29: 10998}
+Invalid response: first
+Invalid response: {14: 11997, 16: 20997, 22: 1000000, 27: 20997, 33: 20997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 999, 14: 999, 16: 999, 27: 9999, 33: 9999}
+Invalid response: {10: -9999, 14: 0, 16: -9999, 33: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 14: 999, 27: 9999, 29: 999, 33: 9999}
+Invalid response: {8: -999, 14: 9000, 29: -999, 33: 0}
+Invalid response: {8: -9000, 21: 9999, 28: 1998, 29: -9000, 33: 0}
+Invalid response: {8: -999, 28: -9999, 29: -9999, 33: 0}
+Invalid response: {8: 0, 14: 0, 29: 0}
+Invalid response: {9: 9999, 10: 11997, 14: 999, 29: 999, 33: 9999}
+Invalid response: {9: -10998, 14: -198, 16: -10998, 22: -999, 29: -10197, 33: -10998}
+Invalid response: {9: 1098, 16: 2097, 21: 11097, 22: 10098, 28: 1098, 29: 198, 33: 1098}
+Invalid response: {9: -10098, 16: -10998, 22: -999, 28: -10998, 29: -11097, 33: -10098}
+Invalid response: {9: 9999, 16: 999, 28: 999, 29: 999, 33: 9999}
+Invalid response: {16: -9999, 28: -9999, 29: -9999, 33: 0}
+Invalid response: {16: 10998, 22: 1000000, 28: 10998, 29: 10098, 33: 10098}
+Invalid response: first
+Invalid response: {9: 10098, 16: 10998, 22: 1000000, 28: 10998, 29: 10098}
+Invalid response: first
+Invalid response: {9: 19998, 22: 1000000, 28: 10998, 29: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 19998, 16: 10998, 22: 1000000, 29: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 20097, 16: 11997, 22: 1000000, 28: 11997, 33: 20097}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 9999, 14: 999, 16: 999, 29: 999, 33: 9999}
+Invalid response: {14: 0, 16: -9999, 29: -999, 33: 0}
+Invalid response: {9: 11097, 14: 10197, 16: 11097, 22: 1000000, 27: 11097, 28: 11097, 33: 11097}
+Invalid response: first
+Invalid response: {14: 10998, 16: 19998, 22: 1000000, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 19998, 14: 10998, 22: 1000000, 29: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {9: 10998, 14: 10998, 16: 19998, 22: 1000000, 29: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 14: 999, 27: 9999, 28: 11997, 33: 9999}
+Invalid response: {8: -10197, 14: -198, 16: -10998, 22: -999, 27: -10998, 33: -10998}
+Invalid response: {8: 198, 16: 2097, 21: 11097, 22: 10098, 27: 1098, 28: 1098, 33: 1098}
+Invalid response: {8: -10107, 16: -10998, 22: -999, 27: -10098, 28: -10998, 33: -10098}
+Invalid response: {8: 999, 16: 999, 27: 9999, 28: 999, 33: 9999}
+Invalid response: {8: -999, 16: -9999, 28: -9999, 33: 0}
+Invalid response: {8: 10098, 16: 10998, 22: 1000000, 28: 1000000, 33: 10098}
+Invalid response: first
+Invalid response: {8: 10098, 16: 10998, 22: 1000000, 27: 10098, 28: 10998}
+Invalid response: first
+Invalid response: {9: 11007, 10: 10197, 16: 10197, 22: 1000000, 27: 11007, 28: 10197, 33: 11007}
+Invalid response: first
+Invalid response: {8: 10998, 22: 1000000, 27: 19998, 28: 10998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 16: 10998, 22: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 14: 999, 16: 999, 27: 9999, 33: 9999}
+Invalid response: {8: -999, 14: 0, 16: -9999, 33: 0}
+Invalid response: {9: 11097, 10: 11097, 14: 10197, 16: 11097, 22: 1000000, 27: 11097, 33: 11097}
+Invalid response: first
+Invalid response: {8: 10998, 14: 10998, 22: 1000000, 27: 19998, 33: 19998}
+Invalid response: first
+Invalid response: {8: 10998, 14: 10998, 16: 19998, 22: 1000000, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 14: 10998, 16: 19998, 22: 1000000, 27: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 14: 999, 16: 999, 27: 9999, 33: 9999}
+Invalid response: {8: -999, 14: 0, 16: -9999, 33: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 108, 9: 198, 16: 2007, 21: 10197, 22: 10008, 27: 198, 28: 1008, 29: 108, 33: 198}
+Invalid response: {8: -10197, 9: -10098, 16: -10098, 22: -99, 27: -10098, 28: -10098, 29: -10197, 33: -10098}
+Invalid response: {8: 99, 9: 999, 16: 99, 27: 999, 28: 99, 29: 99, 33: 999}
+Invalid response: {8: -99, 16: -999, 27: 0, 28: -999, 29: -999, 33: 0}
+Invalid response: {8: 10098, 16: 10998, 22: 1000000, 27: 10098, 28: 10998, 29: 10098, 33: 10098}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10998, 22: 1000000, 27: 10998, 28: 10098, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10098, 16: 10998, 22: 1000000, 28: 11196, 29: 10098, 33: 10098}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10998, 16: 10098, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10098, 16: 10998, 22: 1000000, 27: 10098, 28: 10998, 29: 10098}
+Invalid response: first
+Invalid response: {9: 11097, 16: 11097, 22: 1000000, 27: 11097, 28: 11097, 29: 10197, 33: 11097}
+Invalid response: first
+Invalid response: {8: 10197, 9: 11097, 16: 11097, 22: 1000000, 27: 11097, 28: 11097, 33: 11097}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 10098, 9: 10998, 14: 10098, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 14: 10998, 16: 19998, 22: 1000000, 27: 10998, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 9: 10998, 14: 10998, 16: 19998, 22: 1000000, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 9: 10998, 14: 10998, 16: 19998, 22: 1000000, 27: 10998, 29: 10998}
+Invalid response: first
+Invalid response: {9: 11997, 14: 11097, 16: 20097, 22: 1000000, 27: 11997, 29: 11097, 33: 11997}
+Invalid response: first
+Invalid response: {8: 11097, 9: 11997, 14: 11097, 16: 20097, 22: 1000000, 27: 11997, 33: 11997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 10098, 14: 9999, 22: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 14: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 0, 10: 10998, 27: 0, 29: 0, 33: 0}
+Invalid response: {8: -999, 16: -9999, 22: 0, 27: -900, 29: -10998, 33: -10998}
+Invalid response: {8: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 10: 9999, 22: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 10: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 9: 999, 10: 999, 20: 9999, 22: 9999, 29: 999, 33: 999}
+Invalid response: {8: 0, 9: 9099, 10: -9999, 22: 0, 29: -9999, 33: -9999}
+Invalid response: {8: -9099, 10: -9099, 15: -9000, 21: 9999, 22: -99, 29: -9099, 33: -9000}
+Invalid response: {8: 0, 10: -9999, 15: -9999, 22: 0, 29: -9999, 33: -9999}
+Invalid response: {9: 0, 10: 0, 14: 999, 20: 9999, 22: 9000, 29: 0, 33: 0}
+Invalid response: {9: 9099, 10: -9999, 14: 9000, 22: 0, 29: -9999, 33: -9999}
+Invalid response: {10: -9009, 14: -9099, 15: -9000, 21: 9999, 22: -99, 29: -9099, 33: -9000}
+Invalid response: {10: -9999, 14: 9099, 15: -9999, 22: 0, 29: -9999, 33: -9999}
+Invalid response: {10: -9009, 15: -9000, 21: 9999, 22: -99, 28: 90, 29: -9099, 33: -9000}
+Invalid response: {10: -9999, 15: -9999, 22: 0, 28: -9999, 29: -9999, 33: -9999}
+Invalid response: {10: 10998, 14: 0, 15: 0, 29: 0, 33: 0}
+Invalid response: {8: -10998, 9: -10998, 14: -90, 15: -10998, 16: -9999, 22: 0, 29: -10998, 33: -10998}
+Invalid response: {14: 9999, 15: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 14: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 14: 9999, 15: 9999, 22: 1000000, 33: 9999}
+Invalid response: first
+Invalid response: {10: 9999, 14: 9999, 15: 9999, 22: 1000000, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: -9000, 10: -9000, 21: 9999, 22: 0, 28: 108, 29: -9000, 33: -9000}
+Invalid response: {9: 9099, 10: -9999, 22: 0, 28: -9999, 29: -9999, 33: -9999}
+Invalid response: {10: -9009, 15: -9000, 21: 9999, 22: -99, 28: 90, 29: -9099, 33: -9000}
+Invalid response: {10: -9999, 15: -9999, 22: 0, 28: -9999, 29: -9999, 33: -9999}
+Invalid response: {9: 0, 10: 0, 28: 198, 29: 0, 33: 0}
+Invalid response: {9: -99, 10: -198, 26: -99, 27: 0, 29: -99, 33: -99}
+Invalid response: {9: 9999, 22: 1000000, 28: 10197, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 22: 1000000, 28: 10098, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 22: 1000000, 28: 10098, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 10: 10998, 14: 0, 29: 0, 33: 0}
+Invalid response: {9: -900, 14: -99, 16: -9999, 22: 0, 29: -10998, 33: -10998}
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 14: 9999, 22: 1000000, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 14: 9999, 22: 1000000, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 0, 9: 0, 10: 10998, 29: 0, 33: 0}
+Invalid response: {8: -999, 9: -900, 16: -9999, 22: 0, 29: -10998, 33: -10998}
+Invalid response: {8: 9999, 9: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 10: 9999, 22: 1000000, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 10: 9999, 22: 1000000, 29: 9999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 999, 9: 999, 10: 999, 20: 9999, 22: 9999, 27: 999, 29: 999}
+Invalid response: {8: 0, 9: -9999, 10: -9999, 22: 0, 27: -9999, 29: -9999}
+Invalid response: {9: 1998, 10: 1098, 20: 10098, 22: 10098, 27: 1998, 29: 1098, 33: 1998}
+Invalid response: {9: -9999, 10: -10098, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 10: 11097, 27: 999, 29: 99, 33: 999}
+Invalid response: {9: -10998, 16: -10098, 22: -99, 27: -10998, 29: -11097, 33: -10998}
+Invalid response: {9: 999, 16: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {16: -999, 27: 0, 29: -999, 33: 0}
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {16: 19998, 22: 1000000, 27: 10998, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 19998, 22: 1000000, 29: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 16: 19998, 22: 1000000, 27: 10998, 29: 10998}
+Invalid response: first
+Invalid response: {9: 11997, 16: 20097, 22: 1000000, 27: 11997, 33: 11997}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 10098, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 10: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 1098, 9: 1998, 20: 10098, 22: 10098, 27: 1998, 29: 1098, 33: 1998}
+Invalid response: {8: -99, 9: -9999, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 14: 1098, 20: 10098, 22: 9099, 27: 999, 29: 99, 33: 999}
+Invalid response: {9: -9999, 14: 8991, 22: -99, 27: -9999, 29: -10098, 33: -9999}
+Invalid response: {9: -8901, 21: 10098, 22: 9, 27: -8901, 28: -8991, 29: -8991, 33: -8901}
+Invalid response: {9: -9999, 22: -99, 27: -9999, 28: -10098, 29: -10098, 33: -9999}
+Invalid response: {9: 999, 27: 999, 28: 99, 29: 99, 33: 999}
+Invalid response: {27: 0, 28: -999, 29: -999, 33: 0}
+Invalid response: {22: 1000000, 27: 9999, 28: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 28: 10197, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 22: 1000000, 27: 9999, 28: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 29: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 10098, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 99, 27: 999, 29: 99, 33: 999}
+Invalid response: {14: 9900, 27: 0, 29: -999, 33: 0}
+Invalid response: {21: 999, 27: -9000, 28: -9900, 29: -9900, 33: -9000}
+Invalid response: {27: 0, 28: -999, 29: -999, 33: 0}
+Invalid response: {14: 0, 29: 0, 33: 0}
+Invalid response: {14: 0, 27: 0, 29: 0}
+Invalid response: {14: 999, 27: 9999, 33: 9999}
+Invalid response: {14: 9000, 33: 0}
+Invalid response: {21: 9999, 28: -9000, 33: 0}
+Invalid response: {28: -9999, 33: 0}
+Invalid response: {14: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {14: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 14: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 99, 9: 999, 27: 999, 29: 99, 33: 999}
+Invalid response: {8: 0, 27: 0, 29: -999, 33: 0}
+Invalid response: {8: 9999, 22: 1000000, 27: 9999, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 22: 1000000, 29: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 22: 1000000, 27: 9999, 29: 9999}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10998, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 1098, 9: 1998, 10: 1098, 20: 10098, 22: 10098, 27: 1998, 33: 1998}
+Invalid response: {8: -99, 9: -9999, 10: -10098, 22: -99, 27: -9999, 33: -9999}
+Invalid response: {9: 999, 10: 99, 14: 1098, 20: 10098, 22: 9099, 27: 999, 33: 999}
+Invalid response: {9: -9999, 10: -10098, 14: 8991, 22: -99, 27: -9999, 33: -9999}
+Invalid response: {9: -8901, 10: -8991, 21: 10098, 22: 9, 27: -8901, 28: -8991, 33: -8901}
+Invalid response: {9: -9999, 10: -10098, 22: -99, 27: -9999, 28: -10098, 33: -9999}
+Invalid response: {9: 999, 10: 99, 27: 999, 28: 99, 33: 999}
+Invalid response: {10: -999, 27: 0, 28: -999, 33: 0}
+Invalid response: {10: 10098, 22: 1000000, 27: 9999, 28: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 22: 1000000, 28: 10098, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 22: 1000000, 27: 9999, 28: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 10: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 10: 11097, 14: 99, 27: 999, 33: 999}
+Invalid response: {9: -10998, 14: -108, 16: -10098, 22: -99, 27: -10998, 33: -10998}
+Invalid response: {9: 999, 14: 99, 16: 99, 27: 999, 33: 999}
+Invalid response: {14: 900, 16: -999, 27: 0, 33: 0}
+Invalid response: {16: 99, 21: 999, 27: 0, 28: -900, 33: 0}
+Invalid response: {16: -999, 27: 0, 28: -999, 33: 0}
+Invalid response: {14: 0, 16: 0, 33: 0}
+Invalid response: {14: 0, 16: 0, 27: 0}
+Invalid response: {14: 999, 27: 9999, 33: 9999}
+Invalid response: {14: 9000, 33: 0}
+Invalid response: {21: 9999, 28: 1998, 33: 0}
+Invalid response: {28: -9999, 33: 0}
+Invalid response: {14: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 198, 16: 2007, 21: 10197, 22: 10008, 27: 198, 28: 1008, 33: 198}
+Invalid response: {9: -10098, 16: -10098, 22: -99, 27: -10098, 28: -10098, 33: -10098}
+Invalid response: {9: 999, 16: 99, 27: 999, 28: 99, 33: 999}
+Invalid response: {16: -999, 27: 0, 28: -999, 33: 0}
+Invalid response: {16: 10998, 22: 1000000, 27: 10098, 28: 10998, 33: 10098}
+Invalid response: first
+Invalid response: {9: 10998, 22: 1000000, 27: 10998, 28: 10098, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10098, 16: 10998, 22: 1000000, 28: 11097, 33: 10098}
+Invalid response: first
+Invalid response: {9: 10998, 16: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10098, 16: 10998, 22: 1000000, 27: 10098, 28: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 10998, 14: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {14: 10998, 16: 19998, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 14: 10998, 16: 19998, 22: 1000000, 33: 10998}
+Invalid response: first
+Invalid response: {9: 10998, 14: 10998, 16: 19998, 22: 1000000, 27: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {10: 10098, 14: 9999, 22: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 14: 9999, 22: 1000000, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 10: 9999, 14: 9999, 22: 1000000, 27: 9999}
+Invalid response: first
+Invalid response: {9: 10998, 14: 10098, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 99, 9: 999, 10: 11097, 27: 999, 33: 999}
+Invalid response: {8: -1098, 9: -10998, 16: -10098, 22: -99, 27: -10998, 33: -10998}
+Invalid response: {8: 99, 9: 999, 16: 99, 27: 999, 33: 999}
+Invalid response: {8: 900, 16: -999, 27: 0, 33: 0}
+Invalid response: {9: 0, 10: -900, 14: 99, 16: -900, 20: 99, 27: 0, 33: 0}
+Invalid response: {9: 0, 10: -99, 16: -99, 20: -99, 27: 0, 33: 0}
+Invalid response: {8: 0, 16: 0, 33: 0}
+Invalid response: {8: 0, 16: 0, 27: 0}
+Invalid response: {8: 999, 27: 9999, 33: 9999}
+Invalid response: {8: 0, 33: 0}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 1998, 14: 2097, 16: 10098, 20: 11097, 22: 19098, 27: 1998, 33: 1998}
+Invalid response: {9: -18999, 14: 8991, 16: -9099, 20: -99, 27: -18999, 33: -18999}
+Invalid response: {9: -8901, 16: 1008, 20: 10008, 21: 1098, 27: -8901, 28: 9, 33: -8901}
+Invalid response: {9: -9999, 16: -9, 21: 9000, 27: -9999, 28: -9009, 33: -9999}
+Invalid response: {9: -9000, 16: 9999, 27: -9000, 28: 19008, 33: -9000}
+Invalid response: {9: -18999, 14: -19008, 16: -9, 21: 0, 27: -18999, 33: -18999}
+Invalid response: {9: 99, 21: 1000000, 27: 99, 28: 9, 33: 99}
+Invalid response: first
+Invalid response: {9: 9099, 16: 10008, 21: 1000000, 27: 9099, 33: 9099}
+Invalid response: first
+Invalid response: {16: 19998, 21: 1000000, 27: 9999, 28: 18999, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 19998, 21: 1000000, 28: 19908, 33: 9999}
+Invalid response: first
+Invalid response: {9: 9999, 16: 19998, 21: 1000000, 27: 9999, 28: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 999, 14: 10098, 16: 1000000, 27: 999, 33: 999}
+Invalid response: first
+Invalid response: {9: 9999, 14: 10098, 20: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {14: 19998, 16: 1000000, 20: 1000000, 27: 18999, 33: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 16: 1000000, 20: 1000000, 33: 18999}
+Invalid response: first
+Invalid response: {9: 18999, 14: 19998, 16: 1000000, 20: 1000000, 27: 18999}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 10098, 9: 10998, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 16: 19998, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 9: 10998, 16: 19998, 22: 1000000, 33: 10998}
+Invalid response: first
+Invalid response: {8: 10998, 9: 10998, 16: 19998, 22: 1000000, 27: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9999, 10: 9999, 22: 1000000, 27: 9999, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 10: 9999, 22: 1000000, 33: 9999}
+Invalid response: first
+Invalid response: {8: 9999, 9: 9999, 10: 9999, 22: 1000000, 27: 9999}
+Invalid response: first
+Invalid response: {8: 10098, 9: 10998, 22: 1000000, 27: 10998, 33: 10998}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: {9: 0, 10: -900, 22: -900, 27: 0, 29: -900, 33: 999, 34: 99}
+Invalid response: {9: 0, 10: -999, 22: -999, 27: 0, 29: -999, 34: -999}
+Invalid response: {8: -900, 9: 0, 22: -900, 27: 0, 29: -900, 33: 999, 34: 99}
+Invalid response: {8: -999, 9: 0, 22: -999, 27: 0, 29: -999, 34: -999}
+Invalid response: {8: -900, 9: 0, 10: -801, 27: 0, 29: -900, 33: 999, 34: 99}
+Invalid response: {8: -999, 9: 0, 10: -999, 27: 0, 29: -999, 34: -999}
+Invalid response: {8: -900, 9: 0, 10: -900, 22: -900, 27: 0, 33: 999, 34: 99}
+Invalid response: {8: -999, 9: 0, 10: -999, 22: -999, 27: 0, 34: -999}
+Invalid response: second 0 A5 D1 E1
+Invalid response: {8: 9900, 9: 9999, 10: 9900, 21: 1000000, 22: 9900, 27: 9999, 29: 9900, 34: 9900}
+Invalid response: first
+Invalid response: {8: 9990, 9: 9999, 10: 9990, 21: 1000000, 22: 9990, 27: 9999, 29: 9990, 33: 9999}
+Invalid response: first
+Invalid response: {8: 10899, 10: 10899, 21: 1000000, 22: 10899, 27: 10998, 29: 10899, 33: 19998, 34: 19899}
+Invalid response: first
+Invalid response: {8: 10899, 9: 10998, 10: 10899, 21: 1000000, 22: 10899, 29: 10998, 33: 19998, 34: 19899}
+Invalid response: first
+Invalid response: {9: 10998, 10: 10989, 21: 1000000, 22: 10989, 27: 10998, 29: 10989, 33: 19998, 34: 19989}
+Invalid response: first
+Invalid response: {8: 10989, 9: 10998, 21: 1000000, 22: 10989, 27: 10998, 29: 10989, 33: 19998, 34: 19989}
+Invalid response: first
+Invalid response: {8: 10989, 9: 10998, 10: 10989, 21: 1000000, 27: 10998, 29: 10989, 33: 19998, 34: 20088}
+Invalid response: first
+Invalid response: {8: 10989, 9: 10998, 10: 10989, 21: 1000000, 22: 10989, 27: 10998, 33: 19998, 34: 19989}
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: ------- 0 21
+</span>= draw c3
+
+</pre>
+<hr style="margin-bottom:0" size="1">
+<p style="margin-top:1; margin-right:5" align="right"><i><small>Generated on 10/14/23, 4:18 PM by gogui-regress 1.5.3 (<a href="http://gogui.sf.net">http://gogui.sf.net</a>)</small></i></p>
+</body>
+</html>

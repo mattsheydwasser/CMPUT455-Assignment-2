@@ -489,10 +489,10 @@ class GoBoard(object):
                     currStones+=1
                 elif self.board[each[index]] == opp:
                     oppStones+=1
-                if currStones < 1 or oppStones < 1:
-                    # print('values', pow(10, currStones), currStones, oppStones, pow(10, oppStones))
-                    value += pow(10, currStones) - pow(10, oppStones)
-                
+            if currStones < 1 or oppStones < 1:
+                # print('values', pow(10, currStones), currStones, oppStones, pow(10, oppStones))
+                value += pow(10, currStones) - pow(10, oppStones)
+            
         # print('third', value)
         return value
        
@@ -504,8 +504,14 @@ class GoBoard(object):
         dic = {}
         for each in arr:
             dic[each] = self.evaluateMove(each)
-            
-        return list((dict(sorted(dic.items(), key = lambda item: item[1], reverse=True))).keys())
+        print(dic)
+        
+        sortedPoints = list((dict(sorted(dic.items(), key = lambda item: item[1], reverse=True))).keys())
+        
+        if dic[sortedPoints[0]] == 0:
+            return [sortedPoints[0]]
+        else:
+            return sortedPoints
 
     def evaluateMove(self, move):
         self.play_move(move, self.current_player)
