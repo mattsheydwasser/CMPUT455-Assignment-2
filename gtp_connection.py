@@ -494,7 +494,6 @@ def alphabeta(state, alpha, beta):
         print('first')
         return evaluate
 
-        
     temp = state.orderScores()
     if len(temp) > 0:
         moveToPlay = temp[0]
@@ -504,7 +503,7 @@ def alphabeta(state, alpha, beta):
     for m in temp:
     
         state.play_move(m,state.current_player)
-        (value, returnedMove) = alphabeta(state, -beta, -alpha)
+        value = alphabeta(state, -beta, -alpha)[0]
         value = -value
         if value > alpha:
             alpha = value
@@ -515,7 +514,7 @@ def alphabeta(state, alpha, beta):
         if value >= beta: 
             return (beta, moveToPlay)
     if moveToPlay:
-        print('second', format_point(point_to_coord(moveToPlay, state.size)))
+        print('second', alpha, format_point(point_to_coord(11, state.size)))
     return (alpha, moveToPlay)
 
 

@@ -489,19 +489,18 @@ class GoBoard(object):
                     currStones+=1
                 elif self.board[each[index]] == opp:
                     oppStones+=1
+                if currStones < 1 or oppStones < 1:
+                    # print('values', pow(10, currStones), currStones, oppStones, pow(10, oppStones))
+                    value += pow(10, currStones) - pow(10, oppStones)
                 
-            if currStones < 1 or oppStones < 1:
-                print('values', pow(10, currStones), currStones, oppStones, pow(10, oppStones))
-                value += pow(10, currStones) - pow(10, oppStones)
-                
-        print('third', value)
+        # print('third', value)
         return value
        
 
 
     def orderScores(self):
         arr = self.get_empty_points()
-        print(arr)
+        
         dic = {}
         for each in arr:
             dic[each] = self.evaluateMove(each)

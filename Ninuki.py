@@ -38,8 +38,7 @@ class Go0(GoEngine):
         
         bo = board.copy()
         # try:
-        print('^^^^^^^^', bo.get_empty_points())
-        value, moveToPlay = alphabeta(bo, -10, 10)
+        value, moveToPlay = alphabeta(bo, -10000, 10000)
         print('-------', value, moveToPlay)        
         if value > 0:
             return 'b', moveToPlay
