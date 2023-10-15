@@ -23,7 +23,7 @@ span.test { font-weight:bold; }
 </td></tr>
 </table>
 <table width="100%" bgcolor="#e0e0e0">
-<tr><th align="left">Date:</th><td>October 14, 2023 at 4:21:34 PM MDT</td></tr>
+<tr><th align="left">Date:</th><td>October 14, 2023 at 11:15:49 PM MDT</td></tr>
 <tr><th align="left">Host:</th><td>MattsLaptop (Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz)</td></tr>
 <tr><th align="left" valign="top">Command:</th>
 <td valign="top"><tt>Ninuki.py</tt></td></tr>
@@ -120,8 +120,12 @@ cputime
 </span>= 
 
 <span class="test"><a name="10">10 solve
-</a></span><span class="invalid">Invalid response: {8: -4, 10: -4, 11: 0}
-Invalid response: ------- 0 11
+</a></span><span class="invalid">Invalid response: first
+Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 </span><span class="test">#?[draw e1]
 = draw e1
 
@@ -217,19 +221,12 @@ Invalid response: ------- 0 11
 </span>= 
 
 <span class="test"><a name="20">20 solve
-</a></span><span class="invalid">Invalid response: {11: 3, 15: -1, 16: 0, 29: 3, 33: -2}
-Invalid response: {15: 0, 16: 0, 29: 1000000, 33: -3}
+</a></span><span class="invalid">Invalid response: first
 Invalid response: first
-Invalid response: {11: 1000000, 15: 0, 16: 0, 33: -3}
 Invalid response: first
-Invalid response: {11: 1000000, 15: 4, 22: 0, 28: 4, 29: 4, 33: 0}
 Invalid response: first
-Invalid response: {11: 1000000, 16: 5, 29: 1000000, 33: 1}
-Invalid response: first
-Invalid response: {11: 1000000, 15: 5, 16: 5, 29: 1000000}
 Invalid response: first
 Invalid response: second -10 A5 D1 E1
-Invalid response: ------- -10 11
 </span><span class="test">#?[w]
 = w
 
@@ -302,7 +299,7 @@ Invalid response: ------- -10 11
 
 <span class="test"><a name="30">30 genmove b
 </a>#?[a5]
-</span><span class="fail">= a1
+</span><span class="fail">= d3
 
 </span>
 <span class="command">clear_board
@@ -383,7 +380,7 @@ Invalid response: ------- -10 11
 
 <a name="50">50 genmove w
 </a>#?[e5]
-= e5
+</span><span class="fail">= d1
 
 </span>
 <span class="command">clear_board
@@ -453,1003 +450,465 @@ Invalid response: ------- -10 11
 </span>= 
 
 <span class="test"><a name="60">60 solve
-</a></span><span class="invalid">Invalid response: {8: -6, 9: -5, 10: -6, 21: -1, 22: -6, 27: -5, 29: -6, 33: -2, 34: -3}
-Invalid response: {8: 1, 9: 3, 10: 1, 22: 1, 27: 3, 29: 1, 33: 4, 34: 2}
-Invalid response: {8: -4, 9: -4, 10: -4, 22: -4, 27: -4, 29: -4, 34: 0}
-Invalid response: {8: -3, 10: -3, 22: -3, 27: -3, 29: -3, 33: 0, 34: 0}
-Invalid response: {8: -3, 9: -3, 10: -3, 22: -3, 29: -3, 33: 0, 34: 5}
-Invalid response: {8: -5, 9: -3, 10: -5, 20: -2, 22: -2, 27: -3, 29: -5, 33: -3}
-Invalid response: {8: 2, 9: 3, 10: 2, 22: 2, 27: 3, 29: 2, 33: 3}
-Invalid response: {8: -3, 10: -3, 22: -3, 27: 0, 29: -3, 33: 0}
-Invalid response: {8: 2, 9: 3, 10: 8, 20: 2, 27: 3, 29: 2, 33: 3}
-Invalid response: {8: -8, 9: -6, 16: -5, 20: -5, 22: -2, 27: -6, 29: -8, 33: -6}
-Invalid response: {8: 2, 9: 3, 16: 2, 20: 2, 27: 3, 29: 2, 33: 3}
-Invalid response: {8: -2, 16: -3, 20: -3, 27: 0, 29: -3, 33: 0}
-Invalid response: {8: 5, 9: 6, 20: 6, 22: 6, 27: 6, 29: 5, 33: 6}
-Invalid response: {8: -5, 20: -3, 22: -3, 27: -3, 29: -6, 33: -3}
-Invalid response: {8: 3, 22: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {8: -3, 22: -4, 29: -3, 33: 0}
-Invalid response: {8: 3, 20: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {8: -3, 20: -4, 29: -3, 33: 0}
-Invalid response: {8: 3, 20: 4, 22: 4, 29: 3, 33: 3}
-Invalid response: {8: 0, 22: 0, 29: -4, 33: -4}
-Invalid response: {8: 3, 20: 4, 22: 4, 27: 3, 29: 3}
-Invalid response: {8: 0, 22: 0, 27: -4, 29: -4}
-Invalid response: {9: 6, 10: 5, 20: 6, 22: 6, 27: 6, 29: 5, 33: 6}
-Invalid response: {10: -6, 20: -3, 22: -3, 27: -3, 29: -6, 33: -3}
-Invalid response: {10: 3, 22: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {10: -4, 22: -4, 29: -3, 33: 0}
-Invalid response: {10: 9, 20: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {16: -6, 20: -6, 22: -3, 27: -6, 29: -9, 33: -6}
-Invalid response: {16: 3, 20: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {16: -4, 20: -4, 29: -3, 33: 0}
-Invalid response: {20: 7, 22: 7, 27: 7, 29: 6, 33: 7}
-Invalid response: {22: -3, 27: -4, 29: -7, 33: -4}
-Invalid response: {27: 4, 29: 3, 33: 4}
-Invalid response: {29: -3, 33: 0}
-Invalid response: {22: 1000000, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 29: 4}
-Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
-Invalid response: first
+</a></span><span class="invalid">Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 7, 22: 7, 27: 7, 29: 6, 33: 7}
-Invalid response: {22: -3, 27: -4, 29: -7, 33: -4}
-Invalid response: {27: 4, 29: 3, 33: 4}
-Invalid response: {29: -3, 33: 0}
-Invalid response: {22: 1000000, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 29: 4}
-Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
-Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 7, 20: 7, 22: 8, 29: 6, 33: 6}
-Invalid response: {16: -4, 20: -4, 29: -6, 33: -8}
-Invalid response: {20: 1000000, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {16: 1000000, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {15: 6, 16: 7, 20: 7, 22: 8, 33: 6}
-Invalid response: {15: -8, 16: -4, 20: -4, 33: -8}
-Invalid response: {15: 4, 20: 1000000, 33: 4}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {15: 4, 16: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {15: 8, 16: 1000000, 20: 1000000}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 1000000, 20: 1000000, 29: 8}
-Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 7, 20: 7, 22: 8, 27: 6, 29: 6}
-Invalid response: {16: -4, 20: -4, 27: -8, 29: -6}
-Invalid response: {20: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {16: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {15: 6, 16: 7, 20: 7, 22: 8, 27: 6}
-Invalid response: {15: -8, 16: -4, 20: -4, 27: -8}
-Invalid response: {15: 4, 20: 1000000, 27: 4}
 Invalid response: first
-Invalid response: {15: 4, 16: 1000000, 27: 4}
 Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 27: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {15: 8, 16: 1000000, 20: 1000000}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 1000000, 20: 1000000, 29: 8}
-Invalid response: first
+Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 10, 20: 10, 22: 11, 27: 10, 33: 10}
-Invalid response: {16: -7, 20: -7, 27: -8, 33: -8}
-Invalid response: {20: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: {16: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 33: 8}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 27: 8}
-Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 3, 20: 4, 22: 4, 29: 3, 33: 3}
-Invalid response: {10: -4, 22: 0, 29: -4, 33: -4}
-Invalid response: {10: 3, 20: 4, 22: 4, 27: 3, 29: 3}
-Invalid response: {10: -4, 22: 0, 27: -4, 29: -4}
-Invalid response: {20: 7, 22: 7, 27: 7, 29: 6, 33: 7}
-Invalid response: {22: -3, 27: -4, 29: -7, 33: -4}
-Invalid response: {27: 4, 29: 3, 33: 4}
-Invalid response: {29: -3, 33: 0}
-Invalid response: {22: 1000000, 29: 4, 33: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 6, 20: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {10: -7, 22: -3, 27: -4, 33: -4}
-Invalid response: {10: 10, 27: 4, 33: 4}
-Invalid response: {16: -7, 22: -3, 27: -7, 33: -7}
-Invalid response: {16: 3, 27: 4, 33: 4}
-Invalid response: {16: -4, 33: 0}
-Invalid response: {22: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: {16: 8, 22: 1000000, 33: 7}
 Invalid response: first
-Invalid response: {16: 8, 22: 1000000, 27: 7}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 4, 22: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {10: 4, 22: 1000000, 27: 4}
-Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 20: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {8: -2, 22: -3, 27: -4, 33: -4}
-Invalid response: {9: 3, 10: 2, 14: 5, 20: 6, 22: 3, 27: 3, 33: 3}
-Invalid response: {9: -4, 10: -6, 14: 0, 22: -2, 27: -4, 33: -4}
-Invalid response: {8: 3, 27: 4, 33: 4}
-Invalid response: {8: 0, 33: 0}
-Invalid response: {8: 4, 22: 1000000, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 22: 1000000, 27: 4}
-Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 5, 9: 6, 16: 6, 22: 6, 27: 6, 29: 5, 33: 6}
-Invalid response: {8: -4, 16: -3, 22: -3, 27: -3, 29: -6, 33: -3}
-Invalid response: {8: 3, 22: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {8: -3, 22: -4, 29: -3, 33: 0}
-Invalid response: {8: 3, 16: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {8: -3, 16: -4, 29: -3, 33: 0}
-Invalid response: {8: 3, 16: 4, 22: 4, 29: 3, 33: 3}
-Invalid response: {8: -3, 22: 0, 29: -4, 33: -4}
-Invalid response: {8: 3, 16: 4, 22: 4, 27: 3, 29: 3}
-Invalid response: {8: -3, 22: 0, 27: -4, 29: -4}
-Invalid response: {9: 5, 10: 5, 16: 5, 22: 5, 27: 5, 29: 4, 33: 5}
-Invalid response: {10: -3, 16: -3, 22: -3, 27: -2, 29: -5, 33: -2}
-Invalid response: {10: 3, 16: 3, 22: 3, 29: 2, 33: 2}
-Invalid response: {16: 0, 22: 0, 29: -3, 33: -3}
-Invalid response: {10: 3, 16: 3, 22: 3, 27: 2, 29: 2}
-Invalid response: {16: 0, 22: 0, 27: -3, 29: -3}
-Invalid response: {16: 3, 22: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {16: -4, 22: -4, 29: -3, 33: 0}
-Invalid response: {10: 3, 22: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {10: -4, 22: -4, 29: -3, 33: 0}
-Invalid response: {10: 3, 16: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {10: -4, 16: -4, 29: -3, 33: 0}
-Invalid response: {10: 6, 16: 6, 22: 6, 27: 6, 33: 6}
-Invalid response: {16: -3, 22: -3, 27: -3, 33: -3}
-Invalid response: {22: 3, 27: 4, 33: 4}
-Invalid response: {22: -4, 33: 0}
-Invalid response: {16: 3, 27: 4, 33: 4}
-Invalid response: {16: -4, 33: 0}
-Invalid response: {16: 4, 22: 4, 33: 3}
-Invalid response: {22: 0, 33: -4}
-Invalid response: {16: 4, 22: 4, 27: 3}
-Invalid response: {22: 0, 27: -4}
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 16: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {8: -5, 22: -3, 27: -4, 33: -4}
-Invalid response: {8: 3, 27: 4, 33: 4}
-Invalid response: {8: -3, 33: 0}
-Invalid response: {8: 4, 22: 1000000, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 22: 1000000, 27: 4}
-Invalid response: first
-Invalid response: {9: 6, 10: 6, 22: 6, 27: 6, 33: 6}
-Invalid response: {10: -3, 22: -3, 27: -3, 33: -3}
-Invalid response: {22: 3, 27: 4, 33: 4}
-Invalid response: {22: -4, 33: 0}
-Invalid response: {10: 3, 27: 4, 33: 4}
-Invalid response: {10: -4, 33: 0}
-Invalid response: {10: 4, 22: 4, 33: 3}
-Invalid response: {22: 0, 33: -4}
-Invalid response: {10: 4, 22: 4, 27: 3}
-Invalid response: {22: 0, 27: -4}
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 16: 7, 20: 7, 22: 8, 27: 6, 29: 6, 33: 6}
-Invalid response: {8: -8, 16: -4, 20: -4, 27: -2, 29: -8, 33: -8}
-Invalid response: {8: 2, 15: 4, 16: 1000000, 20: 3, 21: 8, 29: 2, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 20: 1000000, 27: 4, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 16: 1000000, 27: 4, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 27: 8, 29: 8, 33: 8}
-Invalid response: first
-Invalid response: {8: 8, 16: 1000000, 20: 1000000, 27: 8, 33: 8}
-Invalid response: first
-Invalid response: {8: 8, 16: 1000000, 20: 1000000, 27: 8, 29: 8}
-Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 9: 6, 16: 7, 20: 7, 22: 8, 29: 6, 33: 6}
-Invalid response: {8: -8, 9: -2, 16: -4, 20: -4, 29: -8, 33: -8}
-Invalid response: {8: 2, 15: 4, 16: 1000000, 20: 3, 21: 8, 29: 2, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 9: 4, 20: 1000000, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 9: 4, 16: 1000000, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {9: 8, 16: 1000000, 20: 1000000, 29: 8, 33: 8}
-Invalid response: first
-Invalid response: {8: 8, 9: 8, 16: 1000000, 20: 1000000, 33: 8}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 8, 9: 8, 16: 1000000, 20: 1000000, 29: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 9: 6, 16: 7, 20: 7, 22: 8, 27: 6, 29: 6}
-Invalid response: {8: -8, 9: -8, 16: -4, 20: -4, 27: -8, 29: -8}
-Invalid response: {8: 4, 9: 4, 20: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {8: 4, 9: 4, 16: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {9: 8, 16: 1000000, 20: 1000000, 27: 8, 29: 8}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 8, 16: 1000000, 20: 1000000, 27: 8, 29: 8}
 Invalid response: first
-Invalid response: {8: 8, 9: 8, 16: 1000000, 20: 1000000, 29: 8}
 Invalid response: first
-Invalid response: {8: 8, 9: 8, 16: 1000000, 20: 1000000, 27: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {9: 9, 16: 9, 20: 9, 22: 10, 27: 9, 29: 8, 33: 9}
-Invalid response: {9: -8, 16: -6, 20: -6, 27: -8, 29: -7, 33: -8}
-Invalid response: {9: 7, 20: 1000000, 27: 7, 29: 6, 33: 7}
-Invalid response: first
-Invalid response: {9: 7, 16: 1000000, 27: 7, 29: 6, 33: 7}
-Invalid response: first
-Invalid response: {9: 8, 15: 8, 16: 8, 20: 8, 22: 9, 27: 8, 33: 8}
-Invalid response: {9: -8, 15: -8, 16: -5, 20: -5, 27: -8, 33: -8}
-Invalid response: {9: 6, 15: 6, 20: 1000000, 27: 6, 33: 6}
 Invalid response: first
-Invalid response: {9: 6, 15: 6, 16: 1000000, 27: 6, 33: 6}
 Invalid response: first
-Invalid response: {15: 8, 16: 1000000, 20: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: {9: 8, 16: 1000000, 20: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: {9: 8, 15: 8, 16: 1000000, 20: 1000000, 33: 8}
 Invalid response: first
-Invalid response: {9: 8, 15: 8, 16: 1000000, 20: 1000000, 27: 8}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 1000000, 20: 1000000, 27: 8, 29: 8, 33: 8}
 Invalid response: first
-Invalid response: {9: 8, 16: 1000000, 20: 1000000, 29: 8, 33: 8}
 Invalid response: first
-Invalid response: {9: 8, 16: 1000000, 20: 1000000, 27: 8, 29: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 8, 9: 9, 16: 9, 20: 9, 22: 10, 27: 9, 33: 9}
-Invalid response: {8: -7, 9: -8, 16: -6, 20: -6, 27: -8, 33: -8}
-Invalid response: {8: 6, 9: 7, 20: 1000000, 27: 7, 33: 7}
-Invalid response: first
-Invalid response: {8: 6, 9: 7, 16: 1000000, 27: 7, 33: 7}
-Invalid response: first
-Invalid response: {9: 8, 15: 8, 16: 8, 20: 8, 22: 9, 27: 8, 33: 8}
-Invalid response: {9: -8, 15: -8, 16: -5, 20: -5, 27: -8, 33: -8}
-Invalid response: {9: 6, 15: 6, 20: 1000000, 27: 6, 33: 6}
-Invalid response: first
-Invalid response: {9: 6, 15: 6, 16: 1000000, 27: 6, 33: 6}
 Invalid response: first
-Invalid response: {15: 8, 16: 1000000, 20: 1000000, 27: 8, 33: 8}
-Invalid response: first
-Invalid response: {9: 8, 16: 1000000, 20: 1000000, 27: 8, 33: 8}
-Invalid response: first
-Invalid response: {9: 8, 15: 8, 16: 1000000, 20: 1000000, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {9: 8, 15: 8, 16: 1000000, 20: 1000000, 27: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 8, 16: 1000000, 20: 1000000, 27: 8, 33: 8}
-Invalid response: first
-Invalid response: {8: 8, 9: 8, 16: 1000000, 20: 1000000, 33: 8}
 Invalid response: first
-Invalid response: {8: 8, 9: 8, 16: 1000000, 20: 1000000, 27: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 10: 3, 20: 4, 22: 4, 27: 3, 29: 3, 33: 3}
-Invalid response: {8: 0, 10: -4, 22: 0, 27: 3, 29: -4, 33: -4}
-Invalid response: {8: -3, 10: -3, 15: -1, 21: 4, 22: -2, 29: -3, 33: -1}
-Invalid response: {8: 0, 10: -4, 15: -4, 22: 0, 29: -4, 33: -4}
-Invalid response: {10: 3, 14: 3, 20: 4, 22: 1, 27: 0, 29: 0, 33: 0}
-Invalid response: {10: -4, 14: 1, 22: 0, 27: 3, 29: -4, 33: -4}
-Invalid response: {10: -2, 14: -3, 15: -1, 21: 4, 22: -2, 29: -3, 33: -1}
-Invalid response: {10: -4, 14: 3, 15: -4, 22: 0, 29: -4, 33: -4}
-Invalid response: {10: -2, 15: -1, 21: 4, 22: -2, 28: 1, 29: -3, 33: -1}
-Invalid response: {10: -4, 15: -4, 22: 0, 28: -4, 29: -4, 33: -4}
-Invalid response: {10: 7, 14: 0, 15: 0, 29: 0, 33: 0}
-Invalid response: {8: -7, 9: -7, 14: -1, 15: -7, 16: -4, 22: 0, 29: -7, 33: -7}
-Invalid response: {14: 4, 15: 4, 22: 1000000, 29: 4, 33: 4}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {10: 4, 14: 4, 22: 1000000, 29: 4, 33: 4}
 Invalid response: first
-Invalid response: {10: 4, 14: 4, 15: 4, 22: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {10: 4, 14: 4, 15: 4, 22: 1000000, 29: 4}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 0, 21: 4, 22: 0, 27: -1, 28: -1, 29: -1, 33: -1}
-Invalid response: {10: -4, 22: 0, 27: 3, 28: -4, 29: -4, 33: -4}
-Invalid response: {10: -2, 15: -1, 21: 4, 22: -2, 28: 1, 29: -3, 33: -1}
-Invalid response: {10: -4, 15: -4, 22: 0, 28: -4, 29: -4, 33: -4}
-Invalid response: {10: 2, 27: 0, 28: 0, 29: 0, 33: 0}
-Invalid response: {8: -2, 9: 0, 27: 0, 28: -2, 29: -2, 33: 0}
-Invalid response: {22: 1000000, 27: 4, 28: 4, 29: 4, 33: 4}
 Invalid response: first
-Invalid response: {10: 6, 22: 1000000, 27: 4, 29: 4, 33: 4}
 Invalid response: first
-Invalid response: {10: 6, 22: 1000000, 27: 4, 28: 4, 33: 4}
 Invalid response: first
-Invalid response: {10: 4, 22: 1000000, 27: 4, 28: 4, 29: 4}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 9, 14: 0, 27: 0, 29: 0, 33: 0}
-Invalid response: {8: -9, 9: -7, 14: -3, 16: -6, 22: -2, 27: -7, 29: -9, 33: -7}
-Invalid response: {8: 2, 9: 3, 14: 2, 16: 2, 27: 3, 29: 2, 33: 3}
-Invalid response: {8: -2, 14: 1, 16: -3, 27: 0, 29: -3, 33: 0}
-Invalid response: {8: -1, 16: 2, 21: 3, 27: 0, 28: -1, 29: -1, 33: 0}
-Invalid response: {8: -2, 16: -3, 27: 0, 28: -3, 29: -3, 33: 0}
-Invalid response: {8: 0, 14: 0, 16: 0, 29: 0, 33: 0}
-Invalid response: {8: 0, 14: 0, 16: 0, 27: 0, 29: 0}
-Invalid response: {9: 3, 10: 2, 14: 2, 16: 2, 27: 3, 29: 2, 33: 3}
-Invalid response: {10: -3, 14: 1, 16: -3, 27: 0, 29: -3, 33: 0}
-Invalid response: {10: -1, 16: 2, 21: 3, 27: 0, 28: -1, 29: -1, 33: 0}
-Invalid response: {10: -3, 16: -3, 27: 0, 28: -3, 29: -3, 33: 0}
-Invalid response: {10: 0, 14: 0, 16: 0, 29: 0, 33: 0}
-Invalid response: {10: 0, 14: 0, 16: 0, 27: 0, 29: 0}
-Invalid response: {14: 3, 16: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {14: 0, 16: -4, 29: -3, 33: 0}
-Invalid response: {10: 10, 14: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {14: -4, 16: -7, 22: -3, 27: -7, 29: -10, 33: -7}
-Invalid response: {14: 3, 16: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {14: 0, 16: -4, 29: -3, 33: 0}
-Invalid response: {16: 8, 21: 9, 22: 6, 27: 5, 28: 5, 29: 4, 33: 5}
-Invalid response: {16: -7, 22: -3, 27: -6, 28: -7, 29: -9, 33: -6}
-Invalid response: {16: 3, 27: 4, 28: 3, 29: 3, 33: 4}
-Invalid response: {16: -4, 28: -4, 29: -4, 33: 0}
-Invalid response: {16: 7, 22: 1000000, 28: 1000000, 29: 6, 33: 6}
 Invalid response: first
-Invalid response: {16: 7, 22: 1000000, 27: 6, 28: 7, 29: 6}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 28: 7, 29: 7, 33: 8}
 Invalid response: first
-Invalid response: {16: 7, 22: 1000000, 27: 8, 29: 7, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {16: 10, 22: 1000000, 27: 10, 28: 10, 33: 10}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {14: 7, 22: 1000000, 27: 8, 29: 7, 33: 8}
-Invalid response: first
-Invalid response: {14: 7, 16: 8, 22: 1000000, 29: 7, 33: 7}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {14: 7, 16: 8, 22: 1000000, 27: 7, 29: 7}
 Invalid response: first
-Invalid response: {14: 10, 16: 11, 22: 1000000, 27: 11, 33: 11}
 Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 3, 14: 3, 16: 3, 27: 4, 33: 4}
-Invalid response: {10: -4, 14: 0, 16: -4, 33: 0}
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 14: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {8: -3, 14: 1, 29: -3, 33: 0}
-Invalid response: {8: -1, 21: 4, 28: 6, 29: -1, 33: 0}
-Invalid response: {8: -4, 16: -2, 21: 1, 22: 0, 29: -4, 33: -3}
-Invalid response: {8: -1, 16: 4, 22: 0, 29: -1, 33: -1}
-Invalid response: {8: -3, 22: 0, 29: -3, 33: -4}
-Invalid response: {8: 0, 16: 3, 21: 4, 29: 0, 33: 1}
-Invalid response: {8: -3, 16: -4, 29: -3, 33: 0}
-Invalid response: {8: 2, 21: 8, 22: 3, 29: 2, 33: 3}
-Invalid response: {8: -7, 22: -4, 29: -7, 33: -4}
-Invalid response: {8: 4, 29: 4, 33: 1000000}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 4, 22: 1000000, 29: 4}
 Invalid response: first
-Invalid response: {9: 8, 10: 7, 22: 1000000, 29: 7, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 7, 22: 1000000, 27: 8, 28: 7, 33: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 16: 7, 21: 7, 22: 5, 29: 3}
-Invalid response: {8: -6, 21: -4, 22: 0, 29: -6}
-Invalid response: {9: 5, 10: 5, 16: 8, 21: 9, 22: 6, 29: 4, 33: 5}
-Invalid response: {9: -6, 10: -7, 16: -7, 22: -3, 29: -7, 33: -6}
-Invalid response: {9: 4, 10: 3, 16: 3, 29: 3, 33: 4}
-Invalid response: {10: -4, 16: -4, 29: -3, 33: 0}
-Invalid response: {10: 1000000, 16: 7, 22: 1000000, 29: 6, 33: 6}
-Invalid response: first
-Invalid response: {9: 6, 10: 7, 16: 7, 22: 1000000, 29: 6}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {9: 8, 16: 7, 22: 1000000, 29: 7, 33: 8}
 Invalid response: first
-Invalid response: {9: 8, 10: 7, 22: 1000000, 29: 7, 33: 8}
 Invalid response: first
-Invalid response: {9: 8, 10: 8, 16: 8, 22: 1000000, 27: 8, 28: 8, 33: 8}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 4, 16: 8, 21: 9, 22: 6, 27: 5, 28: 5, 33: 5}
-Invalid response: {8: -7, 16: -7, 22: -3, 27: -6, 28: -7, 33: -6}
-Invalid response: {8: 3, 16: 3, 27: 4, 28: 3, 33: 4}
-Invalid response: {8: -3, 16: -4, 28: -4, 33: 0}
-Invalid response: {8: 6, 16: 7, 22: 1000000, 28: 1000000, 33: 6}
 Invalid response: first
-Invalid response: {8: 6, 16: 7, 22: 1000000, 27: 6, 28: 7}
 Invalid response: first
-Invalid response: {9: 8, 10: 8, 16: 8, 22: 1000000, 27: 8, 28: 8, 33: 8}
 Invalid response: first
-Invalid response: {8: 7, 22: 1000000, 27: 8, 28: 7, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 7, 16: 7, 22: 1000000, 27: 8, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 0, 14: 0, 29: 0}
-Invalid response: {9: 4, 10: 10, 14: 3, 29: 3, 33: 4}
-Invalid response: {9: -7, 14: -4, 16: -7, 22: -3, 29: -8, 33: -7}
-Invalid response: {9: 4, 14: 3, 16: 3, 29: 3, 33: 4}
-Invalid response: {14: 0, 16: -4, 29: -3, 33: 0}
-Invalid response: {9: 5, 16: 8, 21: 9, 22: 6, 28: 5, 29: 4, 33: 5}
-Invalid response: {9: -6, 16: -7, 22: -3, 28: -7, 29: -9, 33: -6}
-Invalid response: {9: 4, 16: 3, 28: 3, 29: 3, 33: 4}
-Invalid response: {16: -4, 28: -4, 29: -4, 33: 0}
-Invalid response: {16: 7, 22: 1000000, 28: 7, 29: 6, 33: 6}
-Invalid response: first
-Invalid response: {9: 6, 16: 7, 22: 1000000, 28: 7, 29: 6}
-Invalid response: first
-Invalid response: {9: 8, 22: 1000000, 28: 7, 29: 7, 33: 8}
-Invalid response: first
-Invalid response: {9: 8, 16: 7, 22: 1000000, 29: 7, 33: 8}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {9: 10, 16: 10, 22: 1000000, 28: 10, 33: 10}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {14: 7, 16: 8, 22: 1000000, 29: 7, 33: 7}
 Invalid response: first
-Invalid response: {9: 8, 14: 7, 22: 1000000, 29: 7, 33: 8}
 Invalid response: first
-Invalid response: {9: 7, 14: 7, 16: 8, 22: 1000000, 29: 7}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {9: 9, 14: 8, 16: 9, 22: 1000000, 27: 9, 28: 9, 33: 9}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 14: 3, 27: 4, 28: 10, 33: 4}
-Invalid response: {8: -8, 14: -4, 16: -7, 22: -3, 27: -7, 33: -7}
-Invalid response: {8: 3, 14: 3, 16: 3, 27: 4, 33: 4}
-Invalid response: {8: -3, 14: 0, 16: -4, 33: 0}
-Invalid response: {8: 4, 16: 8, 21: 9, 22: 6, 27: 5, 28: 5, 33: 5}
-Invalid response: {8: -7, 16: -7, 22: -3, 27: -6, 28: -7, 33: -6}
-Invalid response: {8: 3, 16: 3, 27: 4, 28: 3, 33: 4}
-Invalid response: {8: -3, 16: -4, 28: -4, 33: 0}
-Invalid response: {8: 6, 16: 7, 22: 1000000, 28: 1000000, 33: 6}
-Invalid response: first
-Invalid response: {8: 6, 16: 7, 22: 1000000, 27: 6, 28: 7}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {9: 8, 10: 8, 16: 8, 22: 1000000, 27: 8, 28: 8, 33: 8}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 7, 22: 1000000, 27: 8, 28: 7, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 7, 16: 7, 22: 1000000, 27: 8, 33: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 7, 14: 7, 22: 1000000, 27: 8, 33: 8}
-Invalid response: first
-Invalid response: {8: 7, 14: 7, 16: 8, 22: 1000000, 33: 7}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 7, 14: 7, 16: 8, 22: 1000000, 27: 7}
 Invalid response: first
-Invalid response: {9: 9, 10: 9, 14: 8, 16: 9, 22: 1000000, 27: 9, 33: 9}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 14: 3, 16: 3, 27: 4, 33: 4}
-Invalid response: {8: -3, 14: 0, 16: -4, 33: 0}
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 9: 4, 16: 7, 21: 8, 22: 5, 27: 4, 28: 4, 29: 3, 33: 4}
-Invalid response: {8: -8, 9: -6, 16: -6, 22: -2, 27: -6, 28: -6, 29: -8, 33: -6}
-Invalid response: {8: 2, 9: 3, 16: 2, 27: 3, 28: 2, 29: 2, 33: 3}
-Invalid response: {8: -2, 16: -3, 27: 0, 28: -3, 29: -3, 33: 0}
-Invalid response: {8: 6, 16: 7, 22: 1000000, 27: 6, 28: 7, 29: 6, 33: 6}
-Invalid response: first
-Invalid response: {8: 6, 9: 7, 22: 1000000, 27: 7, 28: 6, 29: 6, 33: 7}
-Invalid response: first
-Invalid response: {8: 6, 9: 6, 16: 7, 22: 1000000, 28: 11, 29: 6, 33: 6}
-Invalid response: first
-Invalid response: {8: 6, 9: 7, 16: 6, 22: 1000000, 27: 7, 29: 6, 33: 7}
+</span><span class="stderr">Traceback (most recent call last):
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/Ninuki.py", line 81, in &lt;module&gt;
+</span><span class="invalid">Invalid response: first
 Invalid response: first
-Invalid response: {8: 6, 9: 6, 16: 7, 22: 1000000, 27: 6, 28: 7, 29: 6}
 Invalid response: first
-Invalid response: {9: 9, 16: 9, 22: 1000000, 27: 9, 28: 9, 29: 8, 33: 9}
-Invalid response: first
-Invalid response: {8: 8, 9: 9, 16: 9, 22: 1000000, 27: 9, 28: 9, 33: 9}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+</span><span class="stderr">    run()
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/Ninuki.py", line 77, in run
+</span><span class="invalid">Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 9: 7, 14: 6, 22: 1000000, 27: 7, 29: 6, 33: 7}
 Invalid response: first
-Invalid response: {8: 7, 14: 7, 16: 8, 22: 1000000, 27: 7, 29: 7, 33: 7}
 Invalid response: first
-Invalid response: {8: 7, 9: 7, 14: 7, 16: 8, 22: 1000000, 29: 7, 33: 7}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 7, 9: 7, 14: 7, 16: 8, 22: 1000000, 27: 7, 29: 7}
+</span><span class="stderr">    con.start_connection()
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 102, in start_connection
+</span><span class="invalid">Invalid response: second 0 A5 D1 E1
+</span><span class="stderr">    self.get_cmd(line)
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 130, in get_cmd
+</span><span class="invalid">Invalid response: first
+</span><span class="stderr">    raise e
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 126, in get_cmd
+</span><span class="invalid">Invalid response: first
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {9: 10, 14: 9, 16: 10, 22: 1000000, 27: 10, 29: 9, 33: 10}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 9, 9: 10, 14: 9, 16: 10, 22: 1000000, 27: 10, 33: 10}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {14: 4, 22: 1000000, 27: 4, 29: 4, 33: 4}
+Invalid response: second 0 A5 D1 E1
+</span><span class="stderr">    self.commands[command_name](args)
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 415, in solve_cmd
+</span><span class="invalid">Invalid response: first
 Invalid response: first
-Invalid response: {10: 6, 14: 4, 22: 1000000, 27: 4, 33: 4}
 Invalid response: first
-Invalid response: {10: 4, 14: 4, 22: 1000000, 27: 4, 29: 4}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 0, 10: 7, 27: 0, 29: 0, 33: 0}
-Invalid response: {8: -3, 16: -4, 22: 0, 27: -1, 29: -7, 33: -7}
-Invalid response: {8: 4, 22: 1000000, 27: 4, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 10: 4, 22: 1000000, 27: 4, 33: 4}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 4, 10: 4, 22: 1000000, 27: 4, 29: 4}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
+</span><span class="stderr">    value, moveToPlay = self.go_engine.solve(self.board, self.time)
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/Ninuki.py", line 52, in solve
+</span><span class="invalid">Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 9: 3, 10: 3, 20: 4, 22: 4, 29: 3, 33: 3}
-Invalid response: {8: 0, 9: 3, 10: -4, 22: 0, 29: -4, 33: -4}
-Invalid response: {8: -3, 10: -3, 15: -1, 21: 4, 22: -2, 29: -3, 33: -1}
-Invalid response: {8: 0, 10: -4, 15: -4, 22: 0, 29: -4, 33: -4}
-Invalid response: {9: 0, 10: 0, 14: 3, 20: 4, 22: 1, 29: 0, 33: 0}
-Invalid response: {9: 3, 10: -4, 14: 1, 22: 0, 29: -4, 33: -4}
-Invalid response: {10: -2, 14: -3, 15: -1, 21: 4, 22: -2, 29: -3, 33: -1}
-Invalid response: {10: -4, 14: 3, 15: -4, 22: 0, 29: -4, 33: -4}
-Invalid response: {10: -2, 15: -1, 21: 4, 22: -2, 28: 1, 29: -3, 33: -1}
-Invalid response: {10: -4, 15: -4, 22: 0, 28: -4, 29: -4, 33: -4}
-Invalid response: {10: 7, 14: 0, 15: 0, 29: 0, 33: 0}
-Invalid response: {8: -7, 9: -7, 14: -1, 15: -7, 16: -4, 22: 0, 29: -7, 33: -7}
-Invalid response: {14: 4, 15: 4, 22: 1000000, 29: 4, 33: 4}
 Invalid response: first
-Invalid response: {10: 4, 14: 4, 22: 1000000, 29: 4, 33: 4}
 Invalid response: first
-Invalid response: {10: 4, 14: 4, 15: 4, 22: 1000000, 33: 4}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {10: 4, 14: 4, 15: 4, 22: 1000000, 29: 4}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {9: -1, 10: -1, 21: 4, 22: 0, 28: 3, 29: -1, 33: -1}
-Invalid response: {9: 3, 10: -4, 22: 0, 28: -4, 29: -4, 33: -4}
-Invalid response: {10: -2, 15: -1, 21: 4, 22: -2, 28: 1, 29: -3, 33: -1}
-Invalid response: {10: -4, 15: -4, 22: 0, 28: -4, 29: -4, 33: -4}
-Invalid response: {9: 0, 10: 0, 28: 4, 29: 0, 33: 0}
-Invalid response: {9: -2, 10: -4, 26: -2, 27: 0, 29: -2, 33: -2}
-Invalid response: {9: 4, 22: 1000000, 28: 8, 29: 4, 33: 4}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {9: 4, 10: 4, 22: 1000000, 29: 4, 33: 4}
+</span><span class="stderr">    value, moveToPlay = alphabeta(copy, -10, 10)
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 516, in alphabeta
+    value = alphabeta(state, -beta, -alpha)[0]
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 516, in alphabeta
+</span><span class="invalid">Invalid response: first
 Invalid response: first
-Invalid response: {9: 4, 10: 4, 22: 1000000, 28: 6, 33: 4}
 Invalid response: first
-Invalid response: {9: 4, 10: 4, 22: 1000000, 28: 6, 29: 4}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {9: 0, 10: 7, 14: 0, 29: 0, 33: 0}
-Invalid response: {9: -1, 14: -2, 16: -4, 22: 0, 29: -7, 33: -7}
-Invalid response: {9: 4, 14: 4, 22: 1000000, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {9: 4, 10: 4, 14: 4, 22: 1000000, 33: 4}
-Invalid response: first
-Invalid response: {9: 4, 10: 4, 14: 4, 22: 1000000, 29: 4}
-Invalid response: first
+</span><span class="stderr">    value = alphabeta(state, -beta, -alpha)[0]
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 516, in alphabeta
+</span><span class="invalid">Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 0, 9: 0, 10: 7, 29: 0, 33: 0}
-Invalid response: {8: -3, 9: -1, 16: -4, 22: 0, 29: -7, 33: -7}
-Invalid response: {8: 4, 9: 4, 22: 1000000, 29: 4, 33: 4}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {8: 4, 9: 4, 10: 4, 22: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {8: 4, 9: 4, 10: 4, 22: 1000000, 29: 4}
 Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 9: 3, 10: 3, 20: 4, 22: 4, 27: 3, 29: 3}
-Invalid response: {8: 0, 9: -4, 10: -4, 22: 0, 27: -4, 29: -4}
-Invalid response: {9: 6, 10: 5, 20: 6, 22: 6, 27: 6, 29: 5, 33: 6}
-Invalid response: {10: -6, 20: -3, 22: -3, 27: -3, 29: -6, 33: -3}
-Invalid response: {10: 3, 22: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {10: -4, 22: -4, 29: -3, 33: 0}
-Invalid response: {10: 9, 20: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {16: -6, 20: -6, 22: -3, 27: -6, 29: -9, 33: -6}
-Invalid response: {16: 3, 20: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {16: -4, 20: -4, 29: -3, 33: 0}
-Invalid response: {20: 7, 22: 7, 27: 7, 29: 6, 33: 7}
-Invalid response: {22: -3, 27: -4, 29: -7, 33: -4}
-Invalid response: {27: 4, 29: 3, 33: 4}
-Invalid response: {29: -3, 33: 0}
-Invalid response: {22: 1000000, 29: 4, 33: 4}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+</span><span class="stderr">    value = alphabeta(state, -beta, -alpha)[0]
+  [Previous line repeated 10 more times]
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/gtp_connection.py", line 504, in alphabeta
+</span><span class="invalid">Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 29: 4}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 7, 22: 7, 27: 7, 29: 6, 33: 7}
-Invalid response: {22: -3, 27: -4, 29: -7, 33: -4}
-Invalid response: {27: 4, 29: 3, 33: 4}
-Invalid response: {29: -3, 33: 0}
-Invalid response: {22: 1000000, 29: 4, 33: 4}
+</span><span class="stderr">    temp = state.orderScores()
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/board.py", line 508, in orderScores
+    dic[each] = self.evaluateMove(each)
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/board.py", line 520, in evaluateMove
+</span><span class="invalid">Invalid response: second 0 A5 D1 E1
+</span><span class="stderr">    self.play_move(move, self.current_player)
+  File "/mnt/c/Users/Matthew/Documents/CodeEditor/ProgramsAndAdd-ons/cmput455/a2/assignment2/board.py", line 332, in play_move
+    if self.board[point+offset] == O and self.board[point+(offset*2)] == O and self.board[point+(offset*3)] == color:
+TypeError: signalHandler() takes 0 positional arguments but 2 were given
+</span><span class="invalid">Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 7, 20: 7, 22: 8, 29: 6, 33: 6}
-Invalid response: {16: -4, 20: -4, 29: -6, 33: -8}
-Invalid response: {20: 1000000, 29: 4, 33: 4}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {16: 1000000, 29: 4, 33: 4}
 Invalid response: first
-Invalid response: {15: 6, 16: 7, 20: 7, 22: 8, 33: 6}
-Invalid response: {15: -8, 16: -4, 20: -4, 33: -8}
-Invalid response: {15: 4, 20: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {15: 4, 16: 1000000, 33: 4}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {15: 8, 16: 1000000, 20: 1000000}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 1000000, 20: 1000000, 29: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 7, 20: 7, 22: 8, 27: 6, 29: 6}
-Invalid response: {16: -4, 20: -4, 27: -8, 29: -6}
-Invalid response: {20: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {16: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {15: 6, 16: 7, 20: 7, 22: 8, 27: 6}
-Invalid response: {15: -8, 16: -4, 20: -4, 27: -8}
-Invalid response: {15: 4, 20: 1000000, 27: 4}
-Invalid response: first
-Invalid response: {15: 4, 16: 1000000, 27: 4}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 27: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {15: 8, 16: 1000000, 20: 1000000}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 1000000, 20: 1000000, 29: 8}
-Invalid response: first
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {16: 10, 20: 10, 22: 11, 27: 10, 33: 10}
-Invalid response: {16: -7, 20: -7, 27: -8, 33: -8}
-Invalid response: {20: 1000000, 27: 8, 33: 8}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {16: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 33: 8}
 Invalid response: first
-Invalid response: {16: 1000000, 20: 1000000, 27: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 3, 20: 4, 22: 4, 29: 3, 33: 3}
-Invalid response: {10: -4, 22: 0, 29: -4, 33: -4}
-Invalid response: {10: 3, 20: 4, 22: 4, 27: 3, 29: 3}
-Invalid response: {10: -4, 22: 0, 27: -4, 29: -4}
-Invalid response: {20: 7, 22: 7, 27: 7, 29: 6, 33: 7}
-Invalid response: {22: -3, 27: -4, 29: -7, 33: -4}
-Invalid response: {27: 4, 29: 3, 33: 4}
-Invalid response: {29: -3, 33: 0}
-Invalid response: {22: 1000000, 29: 4, 33: 4}
-Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 29: 4}
-Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
-Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 6, 20: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {10: -7, 22: -3, 27: -4, 33: -4}
-Invalid response: {10: 10, 27: 4, 33: 4}
-Invalid response: {16: -7, 22: -3, 27: -7, 33: -7}
-Invalid response: {16: 3, 27: 4, 33: 4}
-Invalid response: {16: -4, 33: 0}
-Invalid response: {22: 1000000, 27: 8, 33: 8}
-Invalid response: first
-Invalid response: {16: 8, 22: 1000000, 33: 7}
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {16: 8, 22: 1000000, 27: 7}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 4, 22: 1000000, 33: 4}
-Invalid response: first
-Invalid response: {10: 4, 22: 1000000, 27: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 5, 9: 6, 20: 6, 22: 6, 27: 6, 29: 5, 33: 6}
-Invalid response: {8: -6, 20: -3, 22: -3, 27: -3, 29: -6, 33: -3}
-Invalid response: {8: 3, 22: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {8: -4, 22: -4, 29: -3, 33: 0}
-Invalid response: {8: 3, 20: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: {8: -4, 20: -4, 29: -3, 33: 0}
-Invalid response: {8: 3, 20: 4, 22: 4, 29: 3, 33: 3}
-Invalid response: {8: 0, 22: 0, 29: -4, 33: -4}
-Invalid response: {8: 3, 20: 4, 22: 4, 27: 3, 29: 3}
-Invalid response: {8: 0, 22: 0, 27: -4, 29: -4}
-Invalid response: {20: 7, 22: 7, 27: 7, 29: 6, 33: 7}
-Invalid response: {22: -3, 27: -4, 29: -7, 33: -4}
-Invalid response: {27: 4, 29: 3, 33: 4}
-Invalid response: {29: -3, 33: 0}
-Invalid response: {22: 1000000, 29: 4, 33: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 29: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 20: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {8: -3, 22: -3, 27: -4, 33: -4}
-Invalid response: {14: 6, 20: 7, 22: 4, 27: 4, 33: 4}
-Invalid response: {14: -1, 22: -3, 27: -4, 33: -4}
-Invalid response: {21: 7, 22: 2, 27: 2, 28: 1, 33: 2}
-Invalid response: {22: -3, 27: -4, 28: -7, 33: -4}
-Invalid response: {27: 4, 28: 3, 33: 4}
-Invalid response: {28: -4, 33: 0}
-Invalid response: {22: 1000000, 28: 7, 33: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 28: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {14: 3, 27: 4, 33: 4}
-Invalid response: {14: 1, 33: 0}
-Invalid response: {21: 4, 28: -1, 33: 0}
-Invalid response: {28: -4, 33: 0}
-Invalid response: {14: 0}
 Invalid response: second 0 A5 D1 E1
-Invalid response: {14: 4, 22: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {14: 4, 22: 1000000, 27: 4}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 27: 4, 33: 4}
-Invalid response: {8: -1, 33: 0}
-Invalid response: {8: 4, 22: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {8: 4, 22: 1000000, 27: 4}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 5, 9: 6, 10: 5, 20: 6, 22: 6, 27: 6, 33: 6}
-Invalid response: {8: -6, 10: -6, 20: -3, 22: -3, 27: -3, 33: -3}
-Invalid response: {8: 3, 10: 3, 22: 3, 27: 4, 33: 4}
-Invalid response: {8: -4, 10: -4, 22: -4, 33: 0}
-Invalid response: {8: 3, 10: 9, 20: 3, 27: 4, 33: 4}
-Invalid response: {8: -7, 16: -6, 20: -6, 22: -3, 27: -6, 33: -6}
-Invalid response: {8: 3, 16: 3, 20: 3, 27: 4, 33: 4}
-Invalid response: {8: -3, 16: -4, 20: -4, 33: 0}
-Invalid response: {8: 6, 20: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {8: -2, 22: -3, 27: -4, 33: -4}
-Invalid response: {9: 3, 10: 2, 14: 5, 20: 6, 22: 3, 27: 3, 33: 3}
-Invalid response: {9: -4, 10: -6, 14: 0, 22: -2, 27: -4, 33: -4}
-Invalid response: {8: 3, 27: 4, 33: 4}
-Invalid response: {8: 0, 33: 0}
-Invalid response: {8: 4, 22: 1000000, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 22: 1000000, 27: 4}
-Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 16: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {8: -5, 22: -3, 27: -4, 33: -4}
-Invalid response: {8: 3, 27: 4, 33: 4}
-Invalid response: {8: -3, 33: 0}
-Invalid response: {8: 4, 22: 1000000, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 22: 1000000, 27: 4}
 Invalid response: first
-Invalid response: {9: 6, 10: 6, 22: 6, 27: 6, 33: 6}
-Invalid response: {10: -3, 22: -3, 27: -3, 33: -3}
-Invalid response: {22: 3, 27: 4, 33: 4}
-Invalid response: {22: -4, 33: 0}
-Invalid response: {10: 3, 27: 4, 33: 4}
-Invalid response: {10: -4, 33: 0}
-Invalid response: {10: 4, 22: 4, 33: 3}
-Invalid response: {22: 0, 33: -4}
-Invalid response: {10: 4, 22: 4, 27: 3}
-Invalid response: {22: 0, 27: -4}
 Invalid response: second 0 A5 D1 E1
-Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 16: 7, 20: 7, 22: 8, 33: 6}
-Invalid response: {8: -5, 16: -4, 20: -4, 33: -8}
-Invalid response: {8: 4, 20: 1000000, 33: 4}
-Invalid response: first
-Invalid response: {8: 4, 16: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {9: 5, 10: 6, 15: 5, 16: 6, 20: 6, 22: 7, 33: 5}
-Invalid response: {9: -7, 10: -4, 15: -7, 16: -4, 20: -3, 33: -7}
-Invalid response: {9: 3, 10: 4, 15: 3, 16: 4, 33: 3}
-Invalid response: {9: -4, 15: -4, 16: 0, 33: -4}
-Invalid response: {9: 4, 15: 4, 16: 4, 20: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {9: 4, 10: 4, 15: 4, 20: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {10: 8, 15: 7, 16: 8, 20: 1000000, 33: 7}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {9: 7, 10: 8, 16: 8, 20: 1000000, 33: 7}
 Invalid response: first
-Invalid response: {9: 7, 10: 8, 15: 7, 16: 8, 20: 1000000}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 8, 16: 1000000, 20: 1000000}
-Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 16: 7, 20: 7, 22: 8, 27: 6}
-Invalid response: {8: -5, 16: -4, 20: -4, 27: -8}
-Invalid response: {8: 4, 20: 1000000, 27: 4}
 Invalid response: first
-Invalid response: {8: 4, 16: 1000000, 27: 4}
 Invalid response: first
-Invalid response: {9: 5, 10: 6, 15: 5, 16: 6, 20: 6, 22: 7, 27: 5}
-Invalid response: {9: -7, 10: -4, 15: -7, 16: -4, 20: -3, 27: -7}
-Invalid response: {9: 3, 10: 4, 15: 3, 16: 4, 27: 3}
-Invalid response: {9: -4, 15: -4, 16: 0, 27: -4}
-Invalid response: {9: 4, 15: 4, 16: 4, 20: 1000000, 27: 4}
 Invalid response: first
-Invalid response: {9: 4, 10: 4, 15: 4, 20: 1000000, 27: 4}
+Invalid response: second 0 A5 D1 E1
 Invalid response: first
-Invalid response: {10: 8, 15: 7, 16: 8, 20: 1000000, 27: 7}
 Invalid response: first
-Invalid response: {9: 7, 10: 8, 16: 8, 20: 1000000, 27: 7}
 Invalid response: first
-Invalid response: {9: 7, 10: 8, 15: 7, 16: 8, 20: 1000000}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 8, 16: 1000000, 20: 1000000}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {9: 8, 10: 8, 16: 8, 20: 8, 22: 9, 27: 8, 33: 8}
-Invalid response: {9: -7, 10: -6, 16: -6, 20: -5, 27: -7, 33: -7}
-Invalid response: {9: 6, 10: 6, 16: 6, 27: 6, 33: 6}
-Invalid response: {10: -3, 16: -3, 27: -3, 33: -3}
-Invalid response: {16: 3, 27: 4, 33: 4}
-Invalid response: {16: -4, 33: 0}
-Invalid response: {10: 3, 27: 4, 33: 4}
-Invalid response: {10: -4, 33: 0}
-Invalid response: {10: 4, 16: 4, 33: 3}
-Invalid response: {16: 0, 33: -4}
-Invalid response: {10: 4, 16: 4, 27: 3}
-Invalid response: {16: 0, 27: -4}
-Invalid response: second 0 A5 D1 E1
-Invalid response: {9: 7, 16: 6, 20: 1000000, 27: 7, 33: 7}
 Invalid response: first
-Invalid response: {9: 7, 10: 6, 20: 1000000, 27: 7, 33: 7}
 Invalid response: first
-Invalid response: {10: 10, 16: 8, 20: 1000000, 27: 7, 33: 7}
 Invalid response: first
-Invalid response: {9: 7, 10: 8, 16: 8, 20: 1000000, 33: 7}
 Invalid response: first
-Invalid response: {9: 7, 10: 8, 16: 8, 20: 1000000, 27: 7}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 10: 3, 20: 4, 22: 4, 33: 3}
-Invalid response: {8: 0, 10: -4, 22: 0, 33: -4}
-Invalid response: {8: 3, 10: 3, 20: 4, 22: 4, 27: 3}
-Invalid response: {8: 0, 10: -4, 22: 0, 27: -4}
-Invalid response: {10: 6, 20: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {10: -7, 22: -3, 27: -4, 33: -4}
-Invalid response: {10: 10, 27: 4, 33: 4}
-Invalid response: {16: -7, 22: -3, 27: -7, 33: -7}
-Invalid response: {16: 3, 27: 4, 33: 4}
-Invalid response: {16: -4, 33: 0}
-Invalid response: {22: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: {16: 8, 22: 1000000, 33: 7}
 Invalid response: first
-Invalid response: {16: 8, 22: 1000000, 27: 7}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {10: 4, 22: 1000000, 33: 4}
-Invalid response: first
-Invalid response: {10: 4, 22: 1000000, 27: 4}
-Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
-Invalid response: first
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 6, 20: 7, 22: 7, 27: 7, 33: 7}
-Invalid response: {8: -3, 22: -3, 27: -4, 33: -4}
-Invalid response: {14: 6, 20: 7, 22: 4, 27: 4, 33: 4}
-Invalid response: {14: -1, 22: -3, 27: -4, 33: -4}
-Invalid response: {21: 7, 22: 2, 27: 2, 28: 1, 33: 2}
-Invalid response: {22: -3, 27: -4, 28: -7, 33: -4}
-Invalid response: {27: 4, 28: 3, 33: 4}
-Invalid response: {28: -4, 33: 0}
-Invalid response: {22: 1000000, 28: 7, 33: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 4, 28: 4}
 Invalid response: first
-Invalid response: {22: 1000000, 27: 8, 33: 8}
 Invalid response: first
-Invalid response: second 0 A5 D1 E1
-Invalid response: {14: 3, 27: 4, 33: 4}
-Invalid response: {14: 1, 33: 0}
-Invalid response: {21: 4, 28: -1, 33: 0}
-Invalid response: {28: -4, 33: 0}
-Invalid response: {14: 0}
-Invalid response: second 0 A5 D1 E1
-Invalid response: {14: 4, 22: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {14: 4, 22: 1000000, 27: 4}
 Invalid response: first
+Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 3, 27: 4, 33: 4}
-Invalid response: {8: -1, 33: 0}
-Invalid response: {8: 4, 22: 1000000, 33: 4}
 Invalid response: first
-Invalid response: {8: 4, 22: 1000000, 27: 4}
 Invalid response: first
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: {8: -2, 9: -1, 10: -2, 22: -2, 27: -1, 29: -2, 33: 3}
-Invalid response: {8: -3, 9: 0, 10: -3, 22: -3, 27: 0, 29: -3}
-Invalid response: {9: 0, 10: -1, 22: -1, 27: 0, 29: -1, 33: 3, 34: 2}
-Invalid response: {9: 0, 10: -3, 22: -3, 27: 0, 29: -3, 34: -3}
-Invalid response: {8: -1, 9: 0, 22: -1, 27: 0, 29: -1, 33: 3, 34: 2}
-Invalid response: {8: -3, 9: 0, 22: -3, 27: 0, 29: -3, 34: -3}
-Invalid response: {8: -1, 9: 0, 10: 1, 27: 0, 29: -1, 33: 3, 34: 2}
-Invalid response: {8: -3, 9: 0, 10: -3, 27: 0, 29: -3, 34: -3}
-Invalid response: {8: -1, 9: 0, 10: -1, 22: -1, 27: 0, 33: 3, 34: 2}
-Invalid response: {8: -3, 9: 0, 10: -3, 22: -3, 27: 0, 34: -3}
-Invalid response: second 0 A5 D1 E1
-Invalid response: {8: 2, 9: 4, 10: 2, 21: 1000000, 22: 2, 27: 4, 29: 2, 34: 2}
-Invalid response: first
-Invalid response: {8: 3, 9: 4, 10: 3, 21: 1000000, 22: 3, 27: 4, 29: 3, 33: 4}
-Invalid response: first
-Invalid response: {8: 5, 10: 5, 21: 1000000, 22: 5, 27: 7, 29: 5, 33: 8, 34: 6}
-Invalid response: first
-Invalid response: {8: 5, 9: 7, 10: 5, 21: 1000000, 22: 5, 29: 7, 33: 8, 34: 6}
 Invalid response: first
-Invalid response: {9: 7, 10: 6, 21: 1000000, 22: 6, 27: 7, 29: 6, 33: 8, 34: 7}
 Invalid response: first
-Invalid response: {8: 6, 9: 7, 21: 1000000, 22: 6, 27: 7, 29: 6, 33: 8, 34: 7}
-Invalid response: first
-Invalid response: {8: 6, 9: 7, 10: 6, 21: 1000000, 27: 7, 29: 6, 33: 8, 34: 9}
-Invalid response: first
-Invalid response: {8: 6, 9: 7, 10: 6, 21: 1000000, 22: 6, 27: 7, 33: 8, 34: 7}
-Invalid response: first
+Invalid response: second 0 A5 D1 E1
 Invalid response: second 0 A5 D1 E1
-Invalid response: ------- 0 21
-</span><span class="test">#?[draw c3]
-= draw c3
-
-</span>
-</pre>
-<hr style="margin:1em" size="1">
-<pre style="margin:1em">
-cputime
-? Unknown command
-
-quit
-= 
-
-</pre>
-<hr style="margin-bottom:0" size="1">
-<p style="margin-top:1; margin-right:5" align="right"><i><small>Generated on 10/14/23, 4:21 PM by gogui-regress 1.5.3 (<a href="http://gogui.sf.net">http://gogui.sf.net</a>)</small></i></p>
-</body>
-</html>

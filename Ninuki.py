@@ -33,28 +33,42 @@ class Go0(GoEngine):
     
     def solve(self, board: GoBoard, timer):
        
-        # signal.signal(signal.SIGALRM, handler())
-        # signal.alarm(timer)
+        # tries to find best move for toPlay within the time limit, unknown move otherwise
+        signal.signal(signal.SIGALRM, signalHandler)
+        signal.alarm(timer)
         
-        bo = board.copy()
-        # try:
-        value, moveToPlay = alphabeta(bo, -10, 10)
-        print('-------', value, moveToPlay)        
-        if value > 0:
-            return 'b', moveToPlay
-        elif value == 0:
-            return 'draw', moveToPlay
-        else:
-            return 'w', None
-        # except TimeoutError:
-        #     return 'unknown', None
-        # finally:
-        #     signal.alarm(0)
+        copy = board.copy()
         
-       
+        # set current and opponent players (toPlay is black, opponent is white)
+        if board.current_player == WHITE:
+            player = 'w'
+        elif board.current_player == BLACK:
+            player = 'b'
+            
+        if opponent(board.current_player) == WHITE:
+            opp = 'w'
+        elif opponent(board.current_player) == BLACK:
+            opp = 'b'
+            
+        try:
+            value, moveToPlay = alphabeta(copy, -10, 10)
+            
+            if value > 0:
+                # if value is positive, toPlay should play it
+                return player, moveToPlay
+            elif value == 0:
+                # if zero, this means best play for toPlay is drawing
+                return 'draw', moveToPlay
+            else:
+                # if negative, opponent has best move
+                return opp, None
+        except AssertionError:
+            return 'unknown', None
+        
 
-def handler():
-    raise TimeoutError()
+def signalHandler():
+    # handler for signal timer, assert an error 
+    raise AssertionError()
 
 def run() -> None:
     """

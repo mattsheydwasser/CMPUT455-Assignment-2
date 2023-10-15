@@ -457,20 +457,20 @@ class GoBoard(object):
         return
     
     def statisticallyEvaluatePlay(self):
+        
         win_color = self.detect_five_in_a_row()
         
-        if self.get_captures(BLACK)>=10:
-            win_color=BLACK
-        if self.get_captures(WHITE)>=10:
-            win_color=WHITE 
-        #win_color=state.current_player
+        # if captures 10 stones, set winner
+        if self.get_captures(BLACK) >= 10:
+            win_color = BLACK
+        if self.get_captures(WHITE) >= 10:
+            win_color = WHITE 
+            
         assert win_color != self.current_player
         
-        # if win_color == EMPTY:
-            #if state.get_empty_points()==[]: return 0 # true value
-        #    else: return 1 # Just an example - heuristic value
         if win_color != EMPTY:
             return -1000000
+        
         return self.heuristicValue()
 
     def heuristicValue(self):
@@ -478,44 +478,48 @@ class GoBoard(object):
         value = 0
         current_player = self.current_player
         opp = opponent(current_player)
-        
         board = self.rows + self.cols + self.diags
+        
         for each in board:
+            # count number of stones per row, col, diag
             currStones = 0
             oppStones = 0
             for index in range(0, len(each)):
                
+               # count number of stones in each line
                 if self.board[each[index]] == current_player:
                     currStones+=1
                 elif self.board[each[index]] == opp:
                     oppStones+=1
-            if currStones < 1 or oppStones < 1:
-                # print('values', pow(10, currStones), currStones, oppStones, pow(10, oppStones))
+                    
+                # value of move for toPlay relative to the value for opponent
                 value += currStones - oppStones
             
-        # print('third', value)
         return value
        
 
 
     def orderScores(self):
+        # get array of available points, and order them from best to worst move
         arr = self.get_empty_points()
         
         dic = {}
         for each in arr:
             dic[each] = self.evaluateMove(each)
-        print(dic)
         
         sortedPoints = list((dict(sorted(dic.items(), key = lambda item: item[1], reverse=True))).keys())
         
+        # if best move is a draw, only return the draw, else return all moves
         if dic[sortedPoints[0]] == 0:
             return [sortedPoints[0]]
         else:
             return sortedPoints
 
     def evaluateMove(self, move):
+        # simulate playing of move and aquire its value
         self.play_move(move, self.current_player)
-        score = -self.statisticallyEvaluatePlay()
+        value = -self.statisticallyEvaluatePlay()
         self.undo()
-        return score
+        
+        return value
 
