@@ -369,26 +369,23 @@ class GtpConnection:
         color = color_to_int(board_color)
         result1 = self.board.detect_five_in_a_row()
         result2 = EMPTY
+
+        solve, move = self.go_engine.solve(self.board, self.time)
+        if solve == 'unknown':
+            # if game cannot be solved, use normal funcitonality of genmove
+            if self.board.get_captures(opponent(color)) >= 10:
+                result2 = opponent(color)
+            if result1 == opponent(color) or result2 == opponent(color):
+                self.respond("resign")
+                return
+            legal_moves = self.board.get_empty_points()
+            if legal_moves.size == 0:
+                self.respond("pass")
+                return
+            rng = np.random.default_rng()
+            choice = rng.choice(len(legal_moves))
+            move = legal_moves[choice]
         
-        
-        
-        # WRITE GENMOVE CODE
-        # self.respond(self.go_engine.solve(self.board, self.time)[1])
- 
- 
- 
-        if self.board.get_captures(opponent(color)) >= 10:
-            result2 = opponent(color)
-        if result1 == opponent(color) or result2 == opponent(color):
-            self.respond("resign")
-            return
-        legal_moves = self.board.get_empty_points()
-        if legal_moves.size == 0:
-            self.respond("pass")
-            return
-        rng = np.random.default_rng()
-        choice = rng.choice(len(legal_moves))
-        move = legal_moves[choice]
         move_coord = point_to_coord(move, self.board.size)
         move_as_string = format_point(move_coord)
         self.play_cmd([board_color, move_as_string, 'print_move'])
@@ -498,7 +495,6 @@ def alphabeta(state, alpha, beta):
         #print("this is the point "+str(point)) 
         state.win_move = point
         evaluate = (state.statisticallyEvaluatePlay(), None)
-        print('first')
         return evaluate
 
     temp = state.orderScores()
@@ -512,7 +508,7 @@ def alphabeta(state, alpha, beta):
         
     for m in temp:
     
-        state.play_move(m,state.current_player)
+        state.play_move(m, state.current_player)
         value = alphabeta(state, -beta, -alpha)[0]
         value = -value
         if value > alpha:
@@ -522,8 +518,6 @@ def alphabeta(state, alpha, beta):
        
         if value >= beta: 
             return (beta, moveToPlay)
-    if moveToPlay:
-        print('second', alpha, format_point(point_to_coord(31, state.size)), format_point(point_to_coord(10, state.size)), format_point(point_to_coord(11, state.size)))
     return (alpha, moveToPlay)
 
 

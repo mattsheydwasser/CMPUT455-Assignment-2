@@ -7,7 +7,9 @@ Cmput 455 sample code
 Written by Cmput 455 TA and Martin Mueller
 
 Used signal timer based off this reference:
+https://webdocs.cs.ualberta.ca/~mmueller/courses/cmput455/html/python3-bootcamp.html#Time
 https://stackoverflow.com/questions/14920384/stop-code-after-time-period
+
 """
 from gtp_connection import GtpConnection
 from board_base import DEFAULT_SIZE, GO_POINT, GO_COLOR, BLACK, WHITE, opponent
@@ -33,7 +35,9 @@ class Go0(GoEngine):
     
     def solve(self, board: GoBoard, timer):
        
-        # tries to find best move for toPlay within the time limit, unknown move otherwise
+        # tries to find best move for toPlay within the time limit
+        # unknown move otherwise
+        
         signal.signal(signal.SIGALRM, signalHandler)
         signal.alarm(timer)
         
@@ -62,13 +66,16 @@ class Go0(GoEngine):
             else:
                 # if negative, opponent has best move
                 return opp, None
-        except AssertionError:
+            
+        except TimeoutError:
             return 'unknown', None
-        
+        finally:
+            signal.alarm(0)
 
-def signalHandler():
+def signalHandler(sig, frame):
     # handler for signal timer, assert an error 
-    raise AssertionError()
+    # https://stackoverflow.com/questions/1112343/how-do-i-capture-sigint-in-python
+    raise TimeoutError
 
 def run() -> None:
     """

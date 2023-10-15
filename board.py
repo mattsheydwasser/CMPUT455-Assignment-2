@@ -494,6 +494,9 @@ class GoBoard(object):
                     
                 # value of move for toPlay relative to the value for opponent
                 value += currStones - oppStones
+                
+                # if oppStones == 4:
+                #     return 1000
             
         return value
        
@@ -508,7 +511,7 @@ class GoBoard(object):
             dic[each] = self.evaluateMove(each)
         
         sortedPoints = list((dict(sorted(dic.items(), key = lambda item: item[1], reverse=True))).keys())
-        
+        print(dic)
         # if best move is a draw, only return the draw, else return all moves
         if dic[sortedPoints[0]] == 0:
             return [sortedPoints[0]]
