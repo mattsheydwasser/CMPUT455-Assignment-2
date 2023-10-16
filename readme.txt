@@ -4,5 +4,6 @@ Matthew Simon - mcsimon - 1618429
 
 References:
 
-- transposition_table_simple.py by Martin Mueller for our transposition table code
+- https://webdocs.cs.ualberta.ca/~mmueller/courses/cmput455/html/python3-bootcamp.html#Time
+- https://stackoverflow.com/questions/14920384/stop-code-after-time-period
 

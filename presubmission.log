@@ -1,0 +1,23 @@
+Script started on 2023-10-15 19:01:42-06:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="156" LINES="40"]
+mcsimon@ug25:~/Documents/CMPUT_455_assignment_2/test2/CMPUT455-Assignment-2>cp assignment2.tgz testing3
+cp: overwrite 'testing3/assignment2.tgz'? y
+mcsimon@ug25:~/Documents/CMPUT_455_assignment_2/test2/CMPUT455-Assignment-2>cd testing3
+mcsimon@ug25:~/Documents/CMPUT_455_assignment_2/test2/CMPUT455-Assignment-2/testing3>tar -xvzf assignment2.tgz
+Ninuki.py
+a2_public_easy.gtp
+a2_public_medium.gtp
+a2_public_hard.gtp
+board.py
+board_base.py
+board_util.py
+engine.py
+boarda2.py
+gtp_connection.py
+readme.txt
+mcsimon@ug25:~/Documents/CMPUT_455_assignment_2/test2/CMPUT455-Assignment-2/testing3>gogui-regress Ninuki.py a2_public_easy.gtp
+50 unexpected FAIL: Correct 'e5', got 'd5'
+60 unexpected FAIL: Correct 'draw c3', got 'unknown'
+mcsimon@ug25:~/Documents/CMPUT_455_assignment_2/test2/CMPUT455-Assignment-2/testing3>exit
+exit
+
+Script done on 2023-10-15 19:03:14-06:00 [COMMAND_EXIT_CODE="1"]
